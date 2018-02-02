@@ -1,32 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap</title>
-    
-    <!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Titulo do Site</title>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!-- Bootstrap -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="estilo.css" rel="stylesheet">
+
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
   <body>
-   
-   	<h1>Hello, World</h1>
 
-   	<button class="btn btn-primary">Clique aqui</button>
+    <!-- INICIO do Cabecalho -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+
+        <div class="navbar-header">
+          <button type="button"  class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
+            <span class="sr-only">Alternar Menu</span>
+            <span class="glyphicon glyphicon-th-large"></span>
+
+          </button>
+          <a href="#" class="navbar-brand">
+            <span class="glyphicon glyphicon-save"></span>
+            <strong>Curriculo Download</strong>
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="barra-navegacao">
+          <ul class="nav navbar-nav navbar-right menu-links-botoes">
+            <li  class="menu-links-posicao">
+              <button type="button" class="btn btn-secondary btn-block">
+                <a href="#"><strong>Certificações</strong></a>
+              </button> 
+            </li>
+            <li class="menu-links-posicao">
+              <button type="button" class="btn btn-info btn-block">
+                <a href="#"><strong>URI Jugde</strong></a>
+              </button> 
+            </li>
+            <li class="menu-links-posicao">
+              <button type="button" class="btn btn-warning btn-block">
+                <a href="#"><strong>GitHub</strong></a>
+              </button> 
+            </li>
+            <li class="menu-links-posicao">
+              <button type="button" class="btn btn-danger btn-block">
+                <a href="#"><strong>Linkedin</strong></a>
+              </button> 
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- FIM do Cabecalho -->
+
+    <!-- INICIO do Conteudo Principal -->
+    <div style="border: 1px solid green" class="container">
+      <!-- Conteudo Info, Objetivo-Resumo e Skill -->
+      <div class="row">
+        <div style="border: 1px solid yellow; height: 400px" class="col-md-3">
+          Info
+
+          Rua Antônio Pires, 240 - Vila Albertina
+          CEP: 02730-000 - São Paulo/SP
+          (11) 94184-4914 (11) 95241-9622
+          jonnathan.santos@fatec.sp.gov.br
+          26 Anos - Brasileiro - Solteiro
+          https://www.linkedin.com/in/jonnathanls
+        </div>
+        <div style="border: 1px solid yellow; height: 400px" class="col-md-5">
+          Objetivo-Resumo
+
+          Resumo de Qualificações
+          Cursando graduação em análise e desenvolvimento de sistemas, busco construir
+          uma nova base de carreira para me desenvolver profissionalmente através de estágio na
+          área de TI. O interesse surgiu com o estudo de HTML e CSS e se intensificou com a
+          necessidade de programar um sistema administrativo para a empresa em que tive
+          participação societária, cujo projeto foi elaborado com Excel, Access e linguagem de
+          programação em Visual Basic Application.
+          Tenho experiência de 8 anos na área de assessoria imobiliária, prestando serviços
+          na aquisição de imóvel por financiamento bancário. Habituado a processos
+          administrativos, documentos, contratos, planilhas financeiras, elaboração de relatórios e
+          contato com clientes, vendedores e fornecedores.
+        </div>
+        <div style="border: 1px solid yellow; height: 400px" class="col-md-4">
+          Skilss
+        </div>
+      </div>
+      <!-- Conteudo Formação Academica e Video Curriculo -->
+      <div class="row">
+        <div style="border: 1px solid yellow; height: 200px" class="col-md-8">
+          Formação Academica
+        </div>
+        <div style="border: 1px solid yellow; height: 200px" class="col-md-4">
+          Video Curriculo
+        </div>
+      </div>
+      <!-- Conteudo Experiencia Profissional -->
+      <div class="row">
+        <div style="border: 1px solid yellow; height: 250px" class="col-md-12">
+          Experiencias Profissionais
+        </div>
+      </div>
+    </div>
+    <!-- FIM do Conteudo Principal -->
+
+    <!-- INICIO do Rodape -->
+    <footer style="border: 1px solid red; height: 50px" >
+      <div class="footer">Rodape</div>
+    </footer>
+    <!-- FIM do Rodape -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
-</html>
+  </html>

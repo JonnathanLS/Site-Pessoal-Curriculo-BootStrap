@@ -1,0 +1,19 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-size: 16px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: gray;
+}
+.menu-links-posicao{	
+	/*border: 1px solid green;*/
+	margin-top: 8px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.menu-links-botoes{	
+	width: all;
+	
+}
