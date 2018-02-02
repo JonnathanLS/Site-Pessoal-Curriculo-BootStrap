@@ -22,16 +22,30 @@
   <body>
 
     <!-- INICIO do Cabecalho -->
-    <nav style="margin: 0px" class="navbar navbar-default">
+    <nav class="navbar navbar-default">
       <div class="container">
 
         <div class="navbar-header">
+          <!-- Cabeçalho quando o dispaly de resolução for menor do que um Desktop -->
           <button type="button"  class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
-            <span class="sr-only">Alternar Menu</span>
-            <span class="glyphicon glyphicon-th-large"></span>
-
+            <div>
+              <div>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </div>
+            </div>
+            
           </button>
-          <a href="#" class="navbar-brand">
+          <a style="float: left; margin-left: 5px" href="#" class="navbar-toggle collapsed" >
+            <span class="glyphicon glyphicon-save"></span>
+            <strong>CV Download</strong>
+          </a>
+        </div>
+        <!-- Cabeçalho quando o dispaly de resolução for maior que um Desktop -->
+        <div class="navbar-brand collapse navbar-collapse">
+          <a href="#" >
             <span class="glyphicon glyphicon-save"></span>
             <strong>Curriculo Download</strong>
           </a>
@@ -39,23 +53,24 @@
 
         <div class="collapse navbar-collapse" id="barra-navegacao">
           <ul class="nav navbar-nav navbar-right menu-links-botoes">
-            <li  class="menu-links-posicao">
-              <button type="button" class="btn btn-secondary btn-block">
+
+            <li class="menu-links-posicao">
+              <button type="button" class="btn btn-secondary navbar-btn btn-block">
                 <a href="#"><strong>Certificações</strong></a>
               </button> 
             </li>
             <li class="menu-links-posicao">
-              <button type="button" class="btn btn-info btn-block">
+              <button type="button" class="btn btn-info navbar-btn btn-block">
                 <a href="#"><strong>URI Jugde</strong></a>
               </button> 
             </li>
             <li class="menu-links-posicao">
-              <button type="button" class="btn btn-warning btn-block">
+              <button type="button" class="btn btn-warning navbar-btn btn-block">
                 <a href="#"><strong>GitHub</strong></a>
               </button> 
             </li>
             <li class="menu-links-posicao">
-              <button type="button" class="btn btn-danger btn-block">
+              <button type="button" class="btn btn-danger navbar-btn btn-block">
                 <a href="#"><strong>Linkedin</strong></a>
               </button> 
             </li>
@@ -67,82 +82,146 @@
 
     <!-- INICIO do Conteudo Principal -->
     <div style="border: 1px solid green" class="container">
-      <!-- Linha-1 Info, Video, Resumo e Skils -->
-      <div style="border: 1px solid pink" class="row">
-        <!-- 1º, 2º e 3º Bloco - Foto e Informações // Video // Resumo -->
-        <div style="border: 1px solid blue" class="col-md-8">
-          <!-- Layout dos Blocos -->
+      <!-- Linha-1 Foto, Info e Video -->
+      <!-- Visualização MOBILE -->
+      <div class="row">
+        <div style="border: 1px solid blue" class="col-xs-12 visible-xs">
           <div class="row">
-            <!-- Bloco 1 - Foto e Informações  -->
-            <div style="border: 1px solid yellow" class="col-md-7">
-              <div style="border: 1px dotted red" class="row">
-                <div style="border: 1px dotted red" class="col-md-4">
-                  <div style="border: 1px dotted red" class="row">
-                    <div style="border: 1px dotted red" class="col-xs-6 col-md-12">
-                      Foto
-                    </div>
-                    <div style="border: 1px dotted red" class="col-xs-6 col-md-12">
-                      Info 1
-                    </div>
-                  </div>
-                </div>
-                <div style="border: 1px dotted red" class="col-md-8">
-                  Info 2
-                </div>
-              </div>
+            <div style="border: 1px solid white" class="col-xs-3 photo-mobile-hide photo-mobile-show ">
+              <img style="border: 1px solid white" src="img/foto3x4.jpg" class="img-circle img-responsive">
             </div>
-            <!-- Bloco 2 - Video -->
-            <div style="border: 1px solid yellow" class="col-md-5">
-              Video
-            </div>
-            <!-- Bloco 3 - Resumo -->
-            <div style="border: 1px solid yellow" class="col-md-12">
-              Resumo de Qualificações
-            </div>
-
-          </div>
-        </div>
-        <!-- 4º Bloco - Skills -->
-        <div style="border: 1px solid blue" class="col-md-4">
-          <div class="row">
-            <div style="border: 1px solid yellow; height: 100%" class="col-md-12">
-              Skills
+            <div style="float: left; border: 1px solid white; margin-left: 10px" >
+              <span class="glyphicon glyphicon-circle-arrow-right"></span>
+              26 Anos //<br>
+              <span class="glyphicon glyphicon-globe"></span>
+              Brasileiro<br>
+              <span class="glyphicon glyphicon-heart-empty"></span>
+              Solteiro<br>          
+              <span class="glyphicon glyphicon-home"></span>
+              Rua Antônio Pires, nº 240<br>
+              <span class="glyphicon glyphicon-home"></span>
+              CEP: 02730-000 - São Paulo/SP<br>
+              <span class="glyphicon glyphicon-earphone"></span>
+              (11) 94184-4914 (11) 95241-9622<br>
+              <span class="glyphicon glyphicon-envelope"></span>
+              <span style="font-size: 15px">jonnathan.santos@fatec.sp.gov.br<br></span>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Linha-2 Certificações e Formação Academica -->
-      <div  style="border: 1px solid white" class="row">
-        <!-- Bloco 5 - Formação Academica -->
-        <div style="border: 1px dashed white" 
-        class="col-md-7 col-md-push-5">
-          Formação Academica
-        </div>
-        <!-- Bloco 6 - Certificações -->
-        <div style="border: 1px dashed white" 
-        class="col-md-5 col-md-pull-7">
-          Certificações
+        <div style="border: 1px solid blue; padding: 0px" class="col-xs-12 visible-xs">
+          <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
-      <!-- Linha-3 Experiencias Profissionais -->
-      <div  style="border: 1px solid white" class="row">
-        <!-- Bloco 7 - Experiencia Profissional -->
-        <div class="col-md-12">
-          Experiencia Profissional
+      <!-- Visualização DESKTOP -->
+      <div style="border: 1px solid pink; background-color: pink" class="row">
+        <!-- Bloco 1 - Foto -->
+        <div style="border: 1px dashed blue; padding: 0px" class="col-sm-3 hidden-xs">
+          <!-- Foto -->
+          <img src="img/foto3x4.jpg" class="img-thumbnail img-responsive">
         </div>
+        <!-- Bloco 2 - Info -->
+        <div style="text-align: justify; border: 1px solid blue" class="col-sm-5 hidden-xs">
+          <br class="hidden-sm">
+          <span class="glyphicon glyphicon-circle-arrow-right"></span>
+          26 Anos<br>
+          <span class="glyphicon glyphicon-globe"></span>
+          Brasileiro<br>
+          <span class="glyphicon glyphicon-heart-empty"></span>
+          Solteiro<br>          
+          <span class="glyphicon glyphicon-home"></span>
+          Rua Antônio Pires, nº 240<br>
+          <span class="glyphicon glyphicon-home"></span>
+          CEP: 02730-000 - São Paulo/SP<br>
+          <span class="glyphicon glyphicon-earphone"></span>
+          (11) 94184-4914 (11) 95241-9622<br>
+          <span class="glyphicon glyphicon-envelope"></span>
+          jonnathan.santos@fatec.sp.gov.br<br>
+          <!--
+          <span class="glyphicon glyphicon-envelope"></span>
+          jonnathan.lacerda.santos@gmail.com<br>
+          -->
+          
+          <div style="margin-top: 0px"></div>
+          <div style="border: 1px solid red" class="row">
+            <div class="col-xs-2">
+              <img src="img/icon-facebook.png" class="img-responsive">
+            </div>
+            <div class="col-xs-2">
+              <img src="img/icon-facebook.png" class="img-responsive">
+            </div>
+            <div class="col-xs-2">
+              <img src="img/icon-facebook.png" class="img-responsive">
+            </div>
+            <div class="col-xs-2">
+              <img src="img/icon-facebook.png" class="img-responsive">
+            </div> 
+            <div class="col-xs-2">
+              <img src="img/icon-facebook.png" class="img-responsive">
+            </div> 
+             <div class="col-xs-2">
+              <img src="img/icon-facebook.png" class="img-responsive">
+            </div> 
+                            
+          </div>
+      </div>
+      <!-- Bloco 3 - Video -->
+      <div style="border: 1px solid blue; background-color: black" class="col-sm-4 hidden-xs">
+        <br>
+        <br>
+        <br><br><br>
+        Video Curriculo
+        <br><br>
+        <br>
+        <br>
       </div>
     </div>
-    <!-- FIM do Conteudo Principal -->
 
-    <!-- INICIO do Rodape -->
-    <footer style="border: 1px solid red; height: 50px" >
-      <div class="footer">Rodape</div>
-    </footer>
-    <!-- FIM do Rodape -->
+    <!-- Linha-2 Resumo e Skils -->
+    <div style="border: 1px dashed white" class="row">
+      <!-- Bloco 3 - Resumo -->
+      <div style="border: 1px solid yellow" class="col-md-8">
+        Resumo de Qualificações
+      </div>
+      <!-- 4º Bloco - Skills -->
+      <div style="border: 1px solid blue" class="col-md-4">
+        Skills
+      </div>
+    </div>
+    <!-- Linha-3 Certificações e Formação Academica -->
+    <div  style="border: 1px solid white" class="row">
+      <!-- Bloco 5 - Formação Academica -->
+      <div style="border: 1px dashed white" 
+      class="col-md-7 col-md-push-5">
+      Formação Academica
+    </div>
+    <!-- Bloco 6 - Certificações -->
+    <div style="border: 1px dashed white" 
+    class="col-md-5 col-md-pull-7">
+    Certificações
+  </div>
+</div>
+<!-- Linha-4 Experiencias Profissionais -->
+<div  style="border: 1px solid white" class="row">
+  <!-- Bloco 7 - Experiencia Profissional -->
+  <div class="col-md-12">
+    Experiencia Profissional
+  </div>
+</div>
+</div>
+<!-- FIM do Conteudo Principal -->
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-  </body>
-  </html>
+<!-- INICIO do Rodape -->
+<footer style="border: 1px solid red; height: 50px; margin-top: 20px" >
+  <div class="footer">Rodape</div>
+
+</footer>
+<!-- FIM do Rodape -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

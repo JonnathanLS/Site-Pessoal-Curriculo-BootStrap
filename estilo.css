@@ -5,15 +5,48 @@
 body{
 	font-size: 16px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	background: gray;
+	background: #C0C0C0;
 }
 .menu-links-posicao{	
 	/*border: 1px solid green;*/
-	margin-top: 8px;
 	margin-left: 5px;
 	margin-right: 5px;
 }
 .menu-links-botoes{	
 	width: all;
-	
+}
+/* -----------------------------------------
+/* Esta Parte de Codigo se tornou desnecessário
+/* Pois foi possivel substituir por visible-xs e hidden.xs
+/* -----------------------------------------
+@media only screen and (min-width: 768px) {
+	.mobile-hide{ 
+		display: none !important; 
+	}
+}
+@media only screen and (max-width: 769px) {
+	.mobile-show{ 
+		display: inline !important; 
+	}
+}
+@media only screen and (max-width: 768px) {
+	.desktop-hide{ 
+		display: none !important; 
+	}
+}
+@media only screen and (min-width: 769px) {
+	.desktop-show{ 
+		display: inline !important; 
+	}
+}
+---------------------------------------- */
+@media only screen and (max-width: 401px){
+	.photo-mobile-hide{
+		display: none !important; 
+	}
+}
+@media only screen and (min-width: 400px){
+	.photo-mobile-show{
+		display: inline !important; 
+	}
 }
