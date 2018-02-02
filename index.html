@@ -22,7 +22,7 @@
   <body>
 
     <!-- INICIO do Cabecalho -->
-    <nav class="navbar navbar-default">
+    <nav style="margin: 0px" class="navbar navbar-default">
       <div class="container">
 
         <div class="navbar-header">
@@ -67,50 +67,68 @@
 
     <!-- INICIO do Conteudo Principal -->
     <div style="border: 1px solid green" class="container">
-      <!-- Conteudo Info, Objetivo-Resumo e Skill -->
-      <div class="row">
-        <div style="border: 1px solid yellow; height: 400px" class="col-md-3">
-          Info
+      <!-- Linha-1 Info, Video, Resumo e Skils -->
+      <div style="border: 1px solid pink" class="row">
+        <!-- 1º, 2º e 3º Bloco - Foto e Informações // Video // Resumo -->
+        <div style="border: 1px solid blue" class="col-md-8">
+          <!-- Layout dos Blocos -->
+          <div class="row">
+            <!-- Bloco 1 - Foto e Informações  -->
+            <div style="border: 1px solid yellow" class="col-md-7">
+              <div style="border: 1px dotted red" class="row">
+                <div style="border: 1px dotted red" class="col-md-4">
+                  <div style="border: 1px dotted red" class="row">
+                    <div style="border: 1px dotted red" class="col-xs-6 col-md-12">
+                      Foto
+                    </div>
+                    <div style="border: 1px dotted red" class="col-xs-6 col-md-12">
+                      Info 1
+                    </div>
+                  </div>
+                </div>
+                <div style="border: 1px dotted red" class="col-md-8">
+                  Info 2
+                </div>
+              </div>
+            </div>
+            <!-- Bloco 2 - Video -->
+            <div style="border: 1px solid yellow" class="col-md-5">
+              Video
+            </div>
+            <!-- Bloco 3 - Resumo -->
+            <div style="border: 1px solid yellow" class="col-md-12">
+              Resumo de Qualificações
+            </div>
 
-          Rua Antônio Pires, 240 - Vila Albertina
-          CEP: 02730-000 - São Paulo/SP
-          (11) 94184-4914 (11) 95241-9622
-          jonnathan.santos@fatec.sp.gov.br
-          26 Anos - Brasileiro - Solteiro
-          https://www.linkedin.com/in/jonnathanls
+          </div>
         </div>
-        <div style="border: 1px solid yellow; height: 400px" class="col-md-5">
-          Objetivo-Resumo
-
-          Resumo de Qualificações
-          Cursando graduação em análise e desenvolvimento de sistemas, busco construir
-          uma nova base de carreira para me desenvolver profissionalmente através de estágio na
-          área de TI. O interesse surgiu com o estudo de HTML e CSS e se intensificou com a
-          necessidade de programar um sistema administrativo para a empresa em que tive
-          participação societária, cujo projeto foi elaborado com Excel, Access e linguagem de
-          programação em Visual Basic Application.
-          Tenho experiência de 8 anos na área de assessoria imobiliária, prestando serviços
-          na aquisição de imóvel por financiamento bancário. Habituado a processos
-          administrativos, documentos, contratos, planilhas financeiras, elaboração de relatórios e
-          contato com clientes, vendedores e fornecedores.
-        </div>
-        <div style="border: 1px solid yellow; height: 400px" class="col-md-4">
-          Skilss
+        <!-- 4º Bloco - Skills -->
+        <div style="border: 1px solid blue" class="col-md-4">
+          <div class="row">
+            <div style="border: 1px solid yellow; height: 100%" class="col-md-12">
+              Skills
+            </div>
+          </div>
         </div>
       </div>
-      <!-- Conteudo Formação Academica e Video Curriculo -->
-      <div class="row">
-        <div style="border: 1px solid yellow; height: 200px" class="col-md-8">
+      <!-- Linha-2 Certificações e Formação Academica -->
+      <div  style="border: 1px solid white" class="row">
+        <!-- Bloco 5 - Formação Academica -->
+        <div style="border: 1px dashed white" 
+        class="col-md-7 col-md-push-5">
           Formação Academica
         </div>
-        <div style="border: 1px solid yellow; height: 200px" class="col-md-4">
-          Video Curriculo
+        <!-- Bloco 6 - Certificações -->
+        <div style="border: 1px dashed white" 
+        class="col-md-5 col-md-pull-7">
+          Certificações
         </div>
       </div>
-      <!-- Conteudo Experiencia Profissional -->
-      <div class="row">
-        <div style="border: 1px solid yellow; height: 250px" class="col-md-12">
-          Experiencias Profissionais
+      <!-- Linha-3 Experiencias Profissionais -->
+      <div  style="border: 1px solid white" class="row">
+        <!-- Bloco 7 - Experiencia Profissional -->
+        <div class="col-md-12">
+          Experiencia Profissional
         </div>
       </div>
     </div>
