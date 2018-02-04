@@ -22,7 +22,7 @@
   <body>
 
     <!-- INICIO do Cabecalho -->
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
 
         <div class="navbar-header">
@@ -47,7 +47,7 @@
         <div class="navbar-brand collapse navbar-collapse">
           <a href="#" >
             <span class="glyphicon glyphicon-save"></span>
-            <strong>Curriculo Download</strong>
+            <strong>Curriculo PDF Download</strong>
           </a>
         </div>
 
@@ -81,147 +81,233 @@
     <!-- FIM do Cabecalho -->
 
     <!-- INICIO do Conteudo Principal -->
-    <div style="border: 1px solid green" class="container">
-      <!-- Linha-1 Foto, Info e Video -->
+    <div class="container">
+      <!-- Linha-1-Mobile Foto, Info e Video -->
       <!-- Visualização MOBILE -->
       <div class="row">
-        <div style="border: 1px solid blue" class="col-xs-12 visible-xs">
+        <div class="col-xs-12 visible-xs">
           <div class="row">
-            <div style="border: 1px solid white" class="col-xs-3 photo-mobile-hide photo-mobile-show ">
-              <img style="border: 1px solid white" src="img/foto3x4.jpg" class="img-circle img-responsive">
+            <div style="padding: 0px" class="col-xs-3 photo-mobile-hide photo-mobile-show ">
+              <img style="height: 100%; width: 100%" src="img/foto3x4.jpg" class="img-thumbnail img-responsive">
             </div>
-            <div style="float: left; border: 1px solid white; margin-left: 10px" >
+            <div style="float: left; padding-left: 17px" class="col-xs" >
+              <button style="position: absolute; margin-left: 100px;" type="button" class="btn btn-info botao-mobile-hide botao-mobile-show" data-toggle="modal" data-target="#janela-foto-mobile">Link<br>Foto</button>
+              <!-- Janela-Foto-Mobile -->
+              <div class="modal fade" id="janela-foto-mobile">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <!-- Cabeçalho -->
+                    <div class="modal-header">
+                      <div class="close">
+                        <button type="button" class=" btn btn-danger" data-dismiss="modal">
+                          <strong>
+                            Sair X
+                          </strong>
+                        </button>
+                      </div>
+                      <h4 style="font-size: 18px;" class="modal-title">Foto Curriculo</h4>
+                    </div>
+                    <!-- Conteudo -->
+                    <div  style="padding: 0px" class="modal-body">
+                      <img style="height: 100%; width: 100%" src="img/foto3x4.jpg" class="img-thumbnail img-responsive">
+                    </div>
+                    <!-- Rodapé -->
+
+                  </div>
+                </div>
+              </div>
+              <!-- Fim Janela -->
               <span class="glyphicon glyphicon-circle-arrow-right"></span>
-              26 Anos //<br>
+              26 Anos<br>
+              <span class="glyphicon glyphicon-heart-empty"></span>
+              Solteiro<br> 
               <span class="glyphicon glyphicon-globe"></span>
               Brasileiro<br>
-              <span class="glyphicon glyphicon-heart-empty"></span>
-              Solteiro<br>          
-              <span class="glyphicon glyphicon-home"></span>
-              Rua Antônio Pires, nº 240<br>
-              <span class="glyphicon glyphicon-home"></span>
-              CEP: 02730-000 - São Paulo/SP<br>
               <span class="glyphicon glyphicon-earphone"></span>
-              (11) 94184-4914 (11) 95241-9622<br>
+              (11) 94184-4914<br>
+              <span class="glyphicon glyphicon-earphone"></span>
+              (11) 95241-9622<br>
+              <span class="glyphicon glyphicon-home"></span>
+              Rua Antônio Pires<br>
+              <span class="glyphicon glyphicon-home"></span>
+              Nº 240 - São Paulo<br>
+              
               <span class="glyphicon glyphicon-envelope"></span>
-              <span style="font-size: 15px">jonnathan.santos@fatec.sp.gov.br<br></span>
+              <span>
+                E-mail 1 Clique Aqui<br></span>
+                <span class="glyphicon glyphicon-envelope"></span>
+              <span>
+                E-mail 2 Clique Aqui<br></span>
+              </div>
+
+              <!-- Botoes Redes Sociais -->
+              <div style="float: right; height: 100%; margin-right: 7px; padding: 5px 0px 0px 0px; " class="col-xs-2">
+                <div class="btn-group-vertical btn-block" role="group" aria-label="...">
+                  <button style="margin-bottom: 7px" class="btn btn-primary">F</button>
+                  <button style="margin-bottom: 7px" class="btn btn-info">G</button>
+                  <button style="margin-bottom: 7px" class="btn btn-danger">G</button>
+                  <button style="margin-bottom: 7px" class="btn btn-warning">S</button>
+                  <button style="margin-bottom: 7px" class="btn btn-defaul">B</button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div style="border: 1px solid blue; padding: 0px" class="col-xs-12 visible-xs">
-          <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+          <!-- Video-Curriculo -->
+          <div style="padding: 0px" class="col-xs-12 visible-xs">
+            <a href="#" data-toggle="modal" data-target="#janela-video">
+              <img style="height: 100%; width: 100%" src="img/600x600.jpg" class="img-thumbnail img-responsive">
+            </a>
           </div>
         </div>
-      </div>
-      <!-- Visualização DESKTOP -->
-      <div style="border: 1px solid pink; background-color: pink" class="row">
-        <!-- Bloco 1 - Foto -->
-        <div style="border: 1px dashed blue; padding: 0px" class="col-sm-3 hidden-xs">
+        <!-- Linha-1-Desktop Foto, Info e Video -->
+        <!-- Visualização DESKTOP -->
+        <div class="row altura183px altura225px altura277px hidden-xs">
           <!-- Foto -->
-          <img src="img/foto3x4.jpg" class="img-thumbnail img-responsive">
+          <div style="padding: 0px; height: 100%" 
+          class="col-sm-3">
+          <img style="height: 100%; width: 100%" src="img/foto3x4.jpg" class="img-thumbnail img-responsive">
         </div>
-        <!-- Bloco 2 - Info -->
-        <div style="text-align: justify; border: 1px solid blue" class="col-sm-5 hidden-xs">
+        <!-- Informações -->
+        <div style="height: 100%;" class="col-sm-4">
           <br class="hidden-sm">
-          <span class="glyphicon glyphicon-circle-arrow-right"></span>
-          26 Anos<br>
-          <span class="glyphicon glyphicon-globe"></span>
-          Brasileiro<br>
-          <span class="glyphicon glyphicon-heart-empty"></span>
-          Solteiro<br>          
-          <span class="glyphicon glyphicon-home"></span>
-          Rua Antônio Pires, nº 240<br>
-          <span class="glyphicon glyphicon-home"></span>
-          CEP: 02730-000 - São Paulo/SP<br>
-          <span class="glyphicon glyphicon-earphone"></span>
-          (11) 94184-4914 (11) 95241-9622<br>
-          <span class="glyphicon glyphicon-envelope"></span>
-          jonnathan.santos@fatec.sp.gov.br<br>
-          <!--
-          <span class="glyphicon glyphicon-envelope"></span>
-          jonnathan.lacerda.santos@gmail.com<br>
-          -->
-          
-          <div style="margin-top: 0px"></div>
-          <div style="border: 1px solid red" class="row">
-            <div class="col-xs-2">
-              <img src="img/icon-facebook.png" class="img-responsive">
-            </div>
-            <div class="col-xs-2">
-              <img src="img/icon-facebook.png" class="img-responsive">
-            </div>
-            <div class="col-xs-2">
-              <img src="img/icon-facebook.png" class="img-responsive">
-            </div>
-            <div class="col-xs-2">
-              <img src="img/icon-facebook.png" class="img-responsive">
-            </div> 
-            <div class="col-xs-2">
-              <img src="img/icon-facebook.png" class="img-responsive">
-            </div> 
-             <div class="col-xs-2">
-              <img src="img/icon-facebook.png" class="img-responsive">
-            </div> 
-                            
+          <div style="padding-left: 15px" class="row">
+            <span class="glyphicon glyphicon-circle-arrow-right"></span> 26 Anos<br>
           </div>
-      </div>
-      <!-- Bloco 3 - Video -->
-      <div style="border: 1px solid blue; background-color: black" class="col-sm-4 hidden-xs">
-        <br>
-        <br>
-        <br><br><br>
-        Video Curriculo
-        <br><br>
-        <br>
-        <br>
-      </div>
-    </div>
+          
+          <div style="padding-left: 15px" class="row">
+            <span class="glyphicon glyphicon-heart-empty"></span> Solteiro<br>
+          </div>
+          <div style="padding-left: 15px" class="row">
+            <span class="glyphicon glyphicon-globe"></span> Brasileiro<br>
+            <br class="visible-lg">
+          </div>
+          <div style="padding-left: 15px" class="row">
+            <span class="glyphicon glyphicon-home"></span> Rua Antônio Pires, nº 240<br>
+          </div>
+          <div style="padding-left: 15px" class="row">
+            <span class="glyphicon glyphicon-home"></span> CEP: 02730-000 - São Paulo<br>
+            <br class="visible-lg">
+          </div>
+          <div style="padding-left: 15px" class="row hidden-sm">
+            <span class="glyphicon glyphicon-earphone"></span>
+            (11) 94184-4914 (11) 95241-9622<br>
+            <br class="visible-lg">
+          </div>
+          <div style="padding-left: 15px" class="row visible-sm">
+            <span class="glyphicon glyphicon-envelope"></span>
+            94184-4914 Ou 95241-9622 <br>
+          </div>
+          <div style="padding-left: 15px" class="row hidden-sm">
+            <span class="glyphicon glyphicon-envelope"></span>
+            jonnathan.santos@fatec.sp.gov.br<br>
+          </div>
+          <div style="padding-left: 15px" class="row hidden-sm">
+            <span class="glyphicon glyphicon-envelope"></span>
+            jonnathan.lacerda.santos@gmail.com<br>
+          </div>
+          <div style="padding-left: 15px" class="row visible-sm">
+            <span class="glyphicon glyphicon-envelope"></span>
+            E-mail Clique Aqui<br>
+          </div>           
+        </div>
+        <!-- Botoes Redes Sociais -->
+        <div style="height: 100%; padding: 0px " class="col-sm-1">
+          <div style="margin: 0px; " class="row btn-group-vertical btn-block" role="group" aria-label="...">
+            <div class="col">
+              <button style="margin-bottom: 13px" class="btn btn-primary">Face</button>
+            </div>
+            <div class="col">
+              <button style="margin-bottom: 13px" class="btn btn-info">Face</button>
+            </div>
+            <div class="col">
+              <button style="margin-bottom: 13px" class="btn btn-default">Face</button>
+            </div>
+            <div class="col">
+              <button style="margin-bottom: 13px" class="btn btn-warning">Face</button>
+            </div>
+            <div class="col hidden-sm">
+              <button style="margin-bottom: 13px" class="btn btn-danger">Face</button>
+            </div>
+          </div>
+        </div>
+        <!-- Video-Curriculo -->
+        <div style="height: 100%; padding: 0px" class="col-sm-4">
+          <a href="#" data-toggle="modal" data-target="#janela-video">
+            <img style="height: 100%; width: 100%" src="img/600x600.jpg" class="img-thumbnail img-responsive">
+          </a>
+          
+          </div>
+        </div>
 
-    <!-- Linha-2 Resumo e Skils -->
-    <div style="border: 1px dashed white" class="row">
-      <!-- Bloco 3 - Resumo -->
-      <div style="border: 1px solid yellow" class="col-md-8">
-        Resumo de Qualificações
+        <!-- Linha-2 Resumo e Skils -->
+        <div class="row">
+          <!-- Bloco 3 - Resumo -->
+          <div class="col-md-8 borda-espaco">
+            Resumo de Qualificações
+          </div>
+          <!-- 4º Bloco - Skills -->
+          <div class="col-md-4 borda-espaco">
+            Skills
+          </div>
+        </div>
+        <!-- Linha-3 Certificações e Formação Academica -->
+        <div class="row">
+          <!-- Bloco 5 - Formação Academica -->
+          <div class="col-md-7 col-md-push-5 borda-espaco">
+            Formação Academica
+          </div>
+          <!-- Bloco 6 - Certificações -->
+          <div class="col-md-5 col-md-pull-7 borda-espaco">
+            Certificações
+          </div>
+        </div>
+        <!-- Linha-4 Experiencias Profissionais -->
+        <div class="row">
+          <!-- Bloco 7 - Experiencia Profissional -->
+          <div class="col-md-12 borda-espaco">
+            Experiencia Profissional
+          </div>
+        </div>
       </div>
-      <!-- 4º Bloco - Skills -->
-      <div style="border: 1px solid blue" class="col-md-4">
-        Skills
-      </div>
-    </div>
-    <!-- Linha-3 Certificações e Formação Academica -->
-    <div  style="border: 1px solid white" class="row">
-      <!-- Bloco 5 - Formação Academica -->
-      <div style="border: 1px dashed white" 
-      class="col-md-7 col-md-push-5">
-      Formação Academica
-    </div>
-    <!-- Bloco 6 - Certificações -->
-    <div style="border: 1px dashed white" 
-    class="col-md-5 col-md-pull-7">
-    Certificações
-  </div>
-</div>
-<!-- Linha-4 Experiencias Profissionais -->
-<div  style="border: 1px solid white" class="row">
-  <!-- Bloco 7 - Experiencia Profissional -->
-  <div class="col-md-12">
-    Experiencia Profissional
-  </div>
-</div>
-</div>
-<!-- FIM do Conteudo Principal -->
+      <!-- Janela-Video-Curriculo -->
+          <div class="modal fade" id="janela-video">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <!-- Cabeçalho -->
+                <div class="modal-header">
+                  <div class="close">
+                    <button onclick="document.getElementById('video-curriculo').pause()" type="button" class=" btn btn-danger" data-dismiss="modal">
+                      <strong>
+                        Sair X
+                      </strong>
+                    </button>
+                  </div>
+                  <h4 style="font-size: 22px; margin: 0px; padding: 0px;" class="modal-title hidden-xs">Video Curriculo</h4>
+                  <h4 style="font-size: 22px; margin: 0px; padding: 0px;" class="modal-title visible-xs">Video CV</h4>
+                </div>
+                <!-- Conteudo -->
+                <div  style="padding: 0px" class="modal-body">
+                  <video  id="video-curriculo" width="100%" height="100%" controls>
+                    <source src="videos/teste.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <!-- Rodapé -->
 
-<!-- INICIO do Rodape -->
-<footer style="border: 1px solid red; height: 50px; margin-top: 20px" >
-  <div class="footer">Rodape</div>
+                </div>
+              </div>
+            </div>
+      <!-- FIM do Conteudo Principal -->
 
-</footer>
-<!-- FIM do Rodape -->
+      <!-- INICIO do Rodape -->
+      <footer style="border: 1px solid red; height: 50px; margin-top: 20px" >
+        <div class="footer">Rodape</div>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
-</body>
-</html>
+      </footer>
+      <!-- FIM do Rodape -->
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+    </html>

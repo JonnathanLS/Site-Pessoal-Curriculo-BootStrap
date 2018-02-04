@@ -5,7 +5,8 @@
 body{
 	font-size: 16px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	background: #C0C0C0;
+	background: gray;
+	padding-top: 70px;
 }
 .menu-links-posicao{	
 	/*border: 1px solid green;*/
@@ -14,6 +15,11 @@ body{
 }
 .menu-links-botoes{	
 	width: all;
+}
+.borda-espaco{
+	border: 1px dashed white;
+	padding-top: 150px; 
+	padding-bottom: 150px;
 }
 /* -----------------------------------------
 /* Esta Parte de Codigo se tornou desnecessário
@@ -45,8 +51,33 @@ body{
 		display: none !important; 
 	}
 }
+@media only screen and (max-width: 400px){
+	.botao-mobile-show{
+		display: inline !important; 
+	}
+}
+@media only screen and (min-width: 401px){
+	.botao-mobile-hide{
+		display: none !important; 
+	}
+}
 @media only screen and (min-width: 400px){
 	.photo-mobile-show{
 		display: inline !important; 
+	}
+}
+@media only screen and (min-width: 768px){
+	.altura183px{
+		height: 183px;
+	}
+}
+@media only screen and (min-width: 992px){
+	.altura225px{
+		height: 225px;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.altura277px{
+		height: 277px;
 	}
 }
