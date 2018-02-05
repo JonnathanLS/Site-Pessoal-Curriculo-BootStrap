@@ -22,38 +22,43 @@
   <body>
 
     <!-- Janela-Video-Curriculo -->
-    <div class="container">
-      <button type="button" class="btn btn-info" data-toggle="modal" data-target="#janela-video">abrir</button>
-    </div>
-    <!-- Janela-Video-Curriculo -->
-    <div class="modal fade" id="janela-video">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <!-- Cabeçalho -->
-          <div class="modal-header">
-            <div class="close">
-            <button onclick="document.getElementById('video-curriculo').pause()" type="button" class=" btn btn-danger" data-dismiss="modal">
-              <strong>
-                Sair X
-              </strong>
-            </button>
-            </div>
-            <h4 style="font-size: 22px; margin: 0px; padding: 0px;" class="modal-title">Video Curriculo</h4>
-          </div>
-          <!-- Conteudo -->
-          <div  style="padding: 0px" class="modal-body">
-            <video  id="video-curriculo" width="100%" height="100%" controls>
-              <source src="videos/teste.mp4" type="video/mp4">
-            </video>
-          </div>
-          <!-- Rodapé -->
-          
-        </div>
-      </div>
-    </div>
+    <div style="padding: 0px" class="col-sm-12">
+                  <table class="table table-striped table-bordered table-hover table-condensed">
+                    <thead>
+                      <tr>
+                        <th>Curso</th>
+                        <th>Empresa</th>
+                        <th>Obtido em</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Curso 1</td>
+                        <td>Empresa 1</td>
+                        <td>Data 1</td>
+                      </tr>
+                      <tr>
+                        <td>Curso 2</td>
+                        <td>Empresa 2</td>
+                        <td>Data 2</td>
+                      </tr>
+                      <tr>
+                        <td>Curso 3</td>
+                        <td>Empresa 3</td>
+                        <td>Data 3</td>
+                      </tr>
+                      <tr>
+                        <td>Curso 4</td>
+                        <td>Empresa 4</td>
+                        <td>Data 4</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>

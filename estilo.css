@@ -5,7 +5,7 @@
 body{
 	font-size: 16px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	background: white;
+	background: #FAFAFA;
 	padding-top: 70px;
 }
 .menu-links-posicao{	
@@ -23,6 +23,31 @@ body{
 }
 .barra-de-progresso-skills{
 	margin: 10px 0px 0px 0px;
+}
+.titulo-certificado{
+	padding: 1px;
+}
+.body-certificado{
+	width: 100%; 
+	text-align: justify; 
+	margin: 0px; 
+	padding: 0px 3px 0px 2px;
+}
+.tamanho-logo-academico{
+	height: 93%; 
+	width: 93%
+}
+.img-diploma{
+	float: right; 
+	height: 28%; 
+	width: 28%;
+}
+.img-modal-certificado{
+	height: 100%; 
+	width: 100%
+}
+.modal-cabecalho{
+	padding: 10px
 }
 /* -----------------------------------------
 /* Esta Parte de Codigo se tornou desnecessário
