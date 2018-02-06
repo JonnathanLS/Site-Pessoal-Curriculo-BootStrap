@@ -1,13 +1,19 @@
 *{
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+div{
+	margin: 0;
+	padding: 0;
 }
 body{
 	font-size: 16px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	background: #FAFAFA;
+	background-color: #FAFAFA;
 	padding-top: 70px;
 }
+
 .menu-links-posicao{	
 	/*border: 1px solid green;*/
 	margin-left: 5px;
@@ -24,30 +30,43 @@ body{
 .barra-de-progresso-skills{
 	margin: 10px 0px 0px 0px;
 }
-.titulo-certificado{
-	padding: 1px;
-}
 .body-certificado{
 	width: 100%; 
-	text-align: justify; 
 	margin: 0px; 
-	padding: 0px 3px 0px 2px;
+	padding: 0px 4px 0px 4px;
+}
+.body-experiencia{
+	width: 100%; 
+	margin: 0px; 
+	padding: 10px;
+	text-align: justify;
 }
 .tamanho-logo-academico{
-	height: 93%; 
-	width: 93%
+	height: 95%; 
+	width: 95%;
 }
 .img-diploma{
 	float: right; 
-	height: 28%; 
-	width: 28%;
+	height: 27%; 
+	width: 27%;
 }
 .img-modal-certificado{
 	height: 100%; 
 	width: 100%
 }
 .modal-cabecalho{
-	padding: 10px
+	padding: 10px;
+}
+.certificado-cabecalho{
+	padding-left: 10px;
+}
+.experiencia-cabecalho{
+	padding-left: 0px;
+}
+.conteudo-profissional{
+	padding-left: 20px;
+	position: absolute;
+	background-color: #FAFAFA;
 }
 /* -----------------------------------------
 /* Esta Parte de Codigo se tornou desnecessário
@@ -110,8 +129,34 @@ body{
 	}
 }
 @media only screen and (max-width: 768px){
-	.padding-left-mobile{
+	.mobile-cabecalho{
 		padding-top: 20px;
 		padding-left: 15px;
+	}
+}
+@media only screen and (min-width: 768px){
+	.desktop-cabecalho{
+		padding-top: 20px;
+		padding-left: 0px;
+	}
+}
+@media only screen and (min-width: 768px){
+	.desktop-conteudo{
+		padding: 10px 0px 0px 0px;
+	}
+}
+@media only screen and (max-width: 768px){
+	.mobile-conteudo{
+		padding: 15px;
+	}
+}
+@media only screen and (max-width: 768px){
+	.mobile-body-certificado{
+		padding-left: 13px;
+	}
+}
+@media only screen and (max-width: 768px){
+	.linha-formacao{
+		width: 100%
 	}
 }
