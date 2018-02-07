@@ -13,7 +13,12 @@ body{
 	background-color: #FAFAFA;
 	padding-top: 70px;
 }
-
+#rodape{
+	height: 100%; 
+	margin-top: 20px;
+	background: #0B2161;
+	color: white;
+}
 .menu-links-posicao{	
 	/*border: 1px solid green;*/
 	margin-left: 5px;
@@ -58,11 +63,9 @@ body{
 	padding: 10px;
 }
 .certificado-cabecalho{
-	padding-left: 10px;
-}
-.experiencia-cabecalho{
 	padding-left: 0px;
 }
+
 .conteudo-profissional{
 	padding-left: 20px;
 	position: absolute;
@@ -155,6 +158,13 @@ body{
 		padding-left: 13px;
 	}
 }
+@media only screen and (max-width: 768px){
+	.mobile-experiencia-cabecalho{
+	padding-left: 10px;
+}
+	}
+}
+
 @media only screen and (max-width: 768px){
 	.linha-formacao{
 		width: 100%
