@@ -19,6 +19,11 @@ body{
 	background: #0B2161;
 	color: white;
 }
+#iframe{
+        position: fixed;
+        top: 10px; 
+        left: 10px; 
+    }
 .menu-links-posicao{	
 	/*border: 1px solid green;*/
 	margin-left: 5px;
