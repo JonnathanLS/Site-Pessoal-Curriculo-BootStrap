@@ -105,38 +105,42 @@ body{
 	}
 }
 ---------------------------------------- */
-@media only screen and (max-width: 401px){
-	.photo-mobile-hide{
-		display: none !important; 
-	}
-}
-@media only screen and (max-width: 400px){
-	.botao-mobile-show{
-		display: inline !important; 
-	}
-}
-@media only screen and (min-width: 401px){
+
+@media only screen and (min-width: 400px){
 	.botao-mobile-hide{
 		display: none !important; 
 	}
-}
-
-@media only screen and (min-width: 400px){
 	.photo-mobile-show{
 		display: inline !important; 
 	}
 	.botoes-rede-social{
-	padding: 10px 20px 10px 20px;
+	padding: 10px 25px 10px 25px;
 	}
 }
+
 @media only screen and (min-width: 600px){
 	.botoes-rede-social{
-	padding: 10px 35px 10px 35px;
+	padding: 10px 45px 10px 45px;
 	}
 }
 @media only screen and (min-width: 768px){
 	.altura183px{
 		height: 183px;
+	}
+	.desktop-cabecalho{
+		padding: 20px 25px 0px 0px
+	}
+	.desktop-conteudo{
+		padding: 10px 25px 0px 0px;
+	}
+	.grid-academico{
+		padding: 0px 0px 0px 25px;
+	}
+	.displayNONE{
+		display: none;
+	}
+	.botoes-rede-social{	
+	padding: 0px 5px 0px 0px;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -145,6 +149,10 @@ body{
 	}
 	.botoes-rede-social{
 	padding: 5px;
+
+	}
+	.displayBLOCK{
+		display: block;
 	}
 }
 @media only screen and (min-width: 1200px){
@@ -155,19 +163,18 @@ body{
 	padding: 10px 17px 8px 17px;
 	}
 }
-
-@media only screen and (min-width: 768px){
-	.desktop-cabecalho{
-		padding: 20px 25px 0px 0px
+@media only screen and (max-width: 400px){
+	.photo-mobile-hide{
+		display: none !important; 
 	}
-	.desktop-conteudo{
-		padding: 10px 25px 0px 0px;
+	.botao-mobile-show{
+		display: inline !important; 
+		margin-top: 7px;
 	}
-	.grid-academico{
-		padding: 0px 0px 0px 25px;
+	.botoes-rede-social{
+	padding: 10px;
 	}
 }
-
 @media only screen and (max-width: 768px){
 	.mobile-cabecalho{
 		padding-top: 20px;
