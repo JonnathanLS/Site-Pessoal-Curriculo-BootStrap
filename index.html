@@ -21,14 +21,14 @@
 		<body >
 
 			<!-- INICIO do Cabecalho -->
-			<nav class="navbar navbar-default navbar-fixed-top">
+			<nav class="navbar navbar-default">
 				<div class="container">
 
 					<div class="navbar-header">
 						<!-- Cabeçalho quando o dispaly de resolução for menor do que um Desktop -->
-						<button type="button"  class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
-							<div>
-								<div>
+						<button style="background: #F8F8FF;" type="button"  class="navbar-toggle collapsed " data-toggle="collapse" data-target="#barra-navegacao">
+							<div >
+								<div >
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
@@ -37,14 +37,14 @@
 							</div>
 
 						</button>
-						<a style="float: left; margin-left: 5px" href="#" class="navbar-toggle collapsed" >
+						<a style="float: left; margin-left: 5px" href="#" class="navbar-toggle collapsed texto-branco" >
 							<span class="glyphicon glyphicon-save"></span>
 							<strong>CV Download</strong>
 						</a>
 					</div>
 					<!-- Cabeçalho quando o dispaly de resolução for maior que um Desktop -->
 					<div class="navbar-brand collapse navbar-collapse">
-						<a href="#" >
+						<a href="#" class="texto-branco">
 							<span class="glyphicon glyphicon-save"></span>
 							<strong>Curriculo PDF Download</strong>
 						</a>
@@ -53,33 +53,39 @@
 					<div class="collapse navbar-collapse" id="barra-navegacao">
 						<ul class="nav navbar-nav navbar-right menu-links-botoes">
 							<li class="menu-links-posicao">
-								<a href="https://drive.google.com/file/d/1vbO0814z__lEYDtUWoGXqh0pGOTtn-Uh/view?usp=sharing">
-									<button type="button" class="btn btn-info navbar-btn btn-block">
-										<strong>JFG Sistema</strong>
+								<a href="jogoDaVelha/index.html">
+									<button type="button" class="btn navbar-btn btn-block">
+										<strong>Jogo da Velha</strong>
 									</button> 
 								</a>
 							</li>
 							<li class="menu-links-posicao">
-								<button type="button" class="btn btn-secondary navbar-btn btn-block">
-									<a href="#"><strong>Certificações</strong></a>
-								</button> 
+								<a href="#">
+									<button type="button" class="btn navbar-btn btn-block">
+										<strong>Stack Overflow</strong>
+									</button> 
+								</a>
 							</li>
 							<li class="menu-links-posicao">
-								<button type="button" class="btn btn-info navbar-btn btn-block">
-									<a href="#"><strong>URI Jugde</strong></a>
-								</button> 
+								<a href="#">
+									<button type="button" class="btn navbar-btn btn-block">
+										<strong>URI Judge</strong>
+									</button> 
+								</a>
 							</li>
 							<li class="menu-links-posicao">
 								<a href="https://github.com/JonnathanLS">
-									<button type="button" class="btn btn-warning navbar-btn btn-block">
+									<button type="button" class="btn navbar-btn btn-block">
 										<strong>GitHub</strong>
 									</button> 
 								</a>
 							</li>
 							<li class="menu-links-posicao">
-								<button type="button" class="btn btn-danger navbar-btn btn-block">
-									<a href="#"><strong>Linkedin</strong></a>
-								</button> 
+								<a href="#">
+									<button type="button" class="btn navbar-btn btn-block">
+										<strong>Linkedin</strong>
+									</button> 
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -112,7 +118,7 @@
 						<div style="width: 100%;" class="row mobile-conteudo">
 							<!-- Foto -->
 							<div style="padding: 0px" class="col-xs-4 photo-mobile-hide photo-mobile-show ">
-								<img style="height: 100%; width: 100%" src="img/foto3x4.jpg" class="img-thumbnail img-responsive">
+								<img style="height: 100%; width: 100%;" src="img/foto3x4.jpg" class="img-thumbnail img-responsive foto-profissional">
 							</div>
 							<!-- Informações -->
 							<div style="float: left; padding-left: 30px;" class="col-xs" >
@@ -138,44 +144,30 @@
 								<span class="glyphicon glyphicon-envelope"></span>
 								E-mail 2 Clique Aqui<br>
 							</div>
-							<!-- Botoes Redes Sociais -->
-							<div class="col-xs-12">
-								<a href="#">
-									<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-linkedin.png">
-								</a>
-								<a href="#">
-									<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-github.png">
-								</a>
-								<a href="#">
-									<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-googleplus.png">	
-								</a>
-								<a href="#">
-									<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-facebook.png">
-								</a>
-							</div>
+							
 						</div>
 					</div>
 					<!-- Visualização DESKTOP -->
 
 					<!-- Foto -->
 					<div style="padding: 0px; height: 100%" class="col-sm-3 hidden-xs">
-						<img style="height: 100%; width: 100%" src="img/foto3x4.jpg" class="img-thumbnail img-responsive">
+						<img style="height: 100%; width: 100%" src="img/foto3x4.jpg" class="img-thumbnail img-responsive foto-profissional">
 					</div>
 					<!-- Informações -->
-					<div style="height: 100%; padding-left: 13px;" class="col-sm-5 hidden-xs ">
+					<div style="height: 100%; padding: 4px 0px 0px 20px;" class="col-sm-5 hidden-xs ">
 						<!-- Botoes Redes Sociais -->
 						<div style="position: absolute; margin-left: 100px; padding-right: 30px;">
 							<a href="#">
-								<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-linkedin.png">
+								<img class="col-xs-3 img-responsive botoes-rede-social sombra-hover" src="img/social-linkedin.png">
 							</a>
 							<a href="#">
-								<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-github.png">
+								<img class="col-xs-3 img-responsive botoes-rede-social sombra-hover" src="img/social-github.png">
 							</a>
 							<a href="#">
-								<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-googleplus.png">	
+								<img class="col-xs-3 img-responsive botoes-rede-social sombra-hover" src="img/social-googleplus.png">	
 							</a>
 							<a href="#">
-								<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-facebook.png">
+								<img class="col-xs-3 img-responsive botoes-rede-social sombra-hover" src="img/social-facebook.png">
 							</a>
 						</div>
 						
@@ -243,57 +235,70 @@
 						<div class="col-sm-1"></div>
 						<!-- 4º Bloco - Skills -->
 						<div style="padding: 0px" class="col-sm-4">
+							
 							<div class="col-xs-12 mobile-cabecalho desktop-cabecalho">
 								<span class="glyphicon glyphicon-user"></span>
 								<strong> - Skills</strong>
 							</div>
-							<div style="padding-top: 3px" class="col-xs-12 desktop-conteudo mobile-conteudo">
+							<div style="padding-top: 3px" class="col-xs-12 mobile-conteudo">
 								<div class="progress barra-de-progresso-skills">
-									<div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
-										CSS
+									<div style="width: 20%">
+										<div class="progress-bar progress-bar-striped">
+											Ingles
+										</div>
 									</div>
 								</div>
 								<div class="progress barra-de-progresso-skills">
-									<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-										HTML
+									<div style="width: 60%">
+										<div class="progress-bar progress-bar-striped">
+											HTML e CSS
+										</div>
 									</div>
 								</div>
 								<div class="progress barra-de-progresso-skills">
-									<div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
-										Python
+									<div style="width: 40%">
+										<div class="progress-bar progress-bar-striped">
+											JavaScript
+										</div>
 									</div>
 								</div>
 								<div class="progress barra-de-progresso-skills">
-									<div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-										Poo C#
+									<div style="width: 30%">
+										<div class="progress-bar progress-bar-striped">
+											Python
+										</div>
 									</div>
 								</div>
 								<div class="progress barra-de-progresso-skills">
-									<div class="progress-bar progress-bar-primary progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-										VBA
+									<div style="width: 60%">
+										<div class="progress-bar progress-bar-striped">
+											POO em C#
+										</div>
 									</div>
 								</div>
 								<div class="progress barra-de-progresso-skills">
-									<div class="progress-bar progress-bar-default progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-										Microsoft Office
+									<div style="width: 50%">
+										<div class="progress-bar progress-bar-striped">
+											Visual Basic for Application (VBA)
+										</div>
 									</div>
 								</div>
 								<div class="progress barra-de-progresso-skills">
-									<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-										Lógica de Programação
+									<div style="width: 70%">
+										<div class="progress-bar progress-bar-striped">
+											Pacote Microsoft Office
+										</div>
 									</div>
 								</div>
 								<div class="progress barra-de-progresso-skills">
-									<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-										Ingles
-									</div>
-								</div>
-								<div class="progress barra-de-progresso-skills">
-									<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-										Skill X
+									<div style="width: 80%">
+										<div class="progress-bar progress-bar-striped">
+											Lógica de Programação
+										</div>
 									</div>
 								</div>
 							</div> 
+						
 						</div>
 					</div>
 					<!-- Linha-3 Certificações e Formação Academica -->
@@ -397,50 +402,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading" id="certificado-5">
-											<a data-toggle="collapse" data-parent="#accordion" href="#collapse-5" aria-expanded="true" aria-controls="collapse-5">
-												<h5 class="panel-title certificado-cabecalho">
-													<span class="glyphicon glyphicon-triangle-right"></span>
-													<span class="hidden-xs hidden-sm">text</span>
-													<span class="hidden-lg hidden-md">text</span>
-												</h5>
-											</a>
-										</div>
-										<div id="collapse-5" class="panel-collapse collapse" aria-labelledby="certificado-5">
-											<div class="panel body">
-												<div class="body-certificado mobile-body-certificado">
-													Certificado ?
-													<a style="float: right;" href="#janela-certificado-3" data-toggle="modal">
-														<span class="glyphicon glyphicon-ok"></span>
-														Certificado
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading" id="certificado-6">
-											<a data-toggle="collapse" data-parent="#accordion" href="#collapse-6" aria-expanded="true" aria-controls="collapseOne">
-												<h5 class="panel-title certificado-cabecalho">
-													<span class="glyphicon glyphicon-triangle-right"></span>
-													<span class="hidden-xs hidden-sm">Text </span>
-													<span class="hidden-lg hidden-md">texto </span>
-												</h5>
-											</a>
-										</div>
-										<div id="collapse-6" class="panel-collapse collapse" aria-labelledby="certificado-6">
-											<div class="panel body">
-												<div class="body-certificado mobile-body-certificado">
-													Certificado ?
-													<a style="float: right;" href="#janela-certificado-3" data-toggle="modal">
-														<span class="glyphicon glyphicon-ok"></span>
-														Certificado
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
+									
 								</div>
 							</div>               
 						</div>
@@ -457,11 +419,11 @@
 										<div style="width: 100%; float: left;" class="container">
 											<div class="row">
 												<div class="col-xs-2 photo-mobile-hide photo-mobile-show">
-													<img src="img/fatec.jpg" class="img-thumbnail img-responsive tamanho-logo-academico">
+													<img src="img/fatec.jpg" class="img-thumbnail img-responsive tamanho-logo-academico ">
 												</div>
 												<div style="padding-left: 13px;" class="col-xs-10 linha-formacao">
 													<a href="#">
-														<img src="img/diploma.jpg" class="img-responsive img-thumbnail img-diploma">
+														<img src="img/diploma.jpg" class="img-responsive img-thumbnail img-diploma sombra-hover">
 													</a>
 													<p>
 														<strong>Análise e Desenvolvimento de Sistemas</strong><br class="hidden-xs hidden-sm"><br class="hidden-xs hidden-sm">
@@ -477,7 +439,7 @@
 												</div>
 												<div style="padding-left: 13px;"  class="col-xs-10 linha-formacao">
 													<a href="#">
-														<img src="img/diploma.jpg" class="img-responsive img-thumbnail img-diploma">
+														<img src="img/diploma.jpg" class="img-responsive img-thumbnail img-diploma sombra-hover">
 													</a>
 													<p>
 														<strong>Tecnólogo em Negócios Imobiliários
@@ -702,41 +664,32 @@
 					
 					<footer id="rodape" >
 						<div class="container ">
-							<div style="padding-top: 15px" class="row mobile-conteudo">
-								<div class="col-sm-3 col-xs-6">
-									Informações<br>
-									Video-Curriculo<br>
-									Resumo das Qualificações<br>
-									Skills<br>
-									Formação Academica<br>
-									Certificações<br>
-									Experiencia Profissional<br>
+							<div class="row">
+								<div class="col-sm-10 copyright">
+									<strong>
+										Copyright © 2018<br class="visible-xs"> Jonnathan Lacerda Santos
+										<br class="" >
+										<span>Site - Curriculo - Profissional</span>
+									</strong>
+									
 								</div>
-								<div style="padding-left: 20px;" class="col-sm-3 col-xs-6">
-									Link 1<br>
-									Link 2<br>
-									Link 3<br>
-									Link 4<br>
-									Link 5<br>
-									Link 6<br>
-									Link 7<br>
-								</div>
-								<div class="col-sm-6 col-xs-12">
-									<div> Texto .... texto ... .... texto ... .... texto ... .... texto ... .... texto ... .... texto ... 
-										.... texto ... .... texto ... .... texto ... .... texto ... .... texto ... .... texto ... .... texto ... 
-										.... texto ... .... texto ... .... texto ... .... texto ... .... texto ... .... texto ... .... texto ... 
-										.... texto ... .... texto ... .... texto ... .... texto ...
-									</div>
-									<div>
-										Face GitHub Stack Google Etc
-									</div>
-								</div>
-								<div style="padding-top: 15px" class="col-sm-12 col-xs-12">
-									© Copyright 2018 - Site Pessoal - Curriculo - Jonnathan Lacerda Santos.
+								<div class="col-sm-2">
+									<a href="#">
+										<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-linkedin.png">
+									</a>
+									<a href="#">
+										<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-github.png">
+									</a>
+									<a href="#">
+										<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-googleplus.png">	
+									</a>
+									<a href="#">
+										<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-facebook.png">
+									</a>
 								</div>
 							</div>
+							
 						</div>
-
 					</footer>
 					<!-- FIM do Rodape -->
 

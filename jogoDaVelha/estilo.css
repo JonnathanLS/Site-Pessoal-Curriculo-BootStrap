@@ -1,0 +1,139 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-color: #000080;
+	font-family: Verdana, Trebuchet,sans-serif;
+	padding-top: 30px;
+}
+div{	
+	border: 0px dashed gray;
+	text-align: center;
+}
+.form-control {
+	background: #F8F8FF;
+	border-radius: 5px;
+	box-shadow: 0px -1px 5px black; 
+}
+#QuadroPrincipal{
+	background-color: #F0FFF0;
+	box-shadow: 0px 0px 20px #ADD8E6;
+	border-radius: 10px ;
+}
+@media only screen and (max-width: 768px){
+	#QuadroPrincipal{
+		margin: 20px;
+	}
+}
+#EmProducao{
+	animation: piscar-box 1s 0s infinite;
+}
+
+@keyframes piscar-box{
+	from {color: white;}
+	to {color: red;}
+}
+#Banner{
+	padding: 25px;	
+}
+#CorpoMenu{
+	padding: 25px;
+	display: none;
+}
+#CorpoJogo{
+	padding: 30px;
+	display: none;
+	background: #66CDAA;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+#GrauDificuldade{
+	width: 160px;
+	width: 100%;
+}
+#IniciarJogo{
+	border-radius: 0px;
+	border-top-right-radius: 7px;
+	border-top-left-radius: 7px;
+}
+#ReiniciarJogo{
+	display: none;
+	border-top-right-radius: 7px;
+	border-top-left-radius: 7px;
+}
+#CorpoMensagem{
+	font-size: 15px;
+	padding: 25px;
+	border-radius: 10px ;
+}
+#Resultado{
+	padding: 15px;
+	border-radius: 10px;
+	display: none;
+}
+#Resultado:hover{
+	color: blue;
+}
+.Colunas{
+	height: 100px;
+	padding-top: 10px;
+	font-size: 50px;
+	/*border: 1px dashed gray;*/
+	border-radius: 50px;
+	background: #E7E2E2;
+	animation: animacao-box 1s 0s;
+	box-shadow: -5px -5px 10px black;
+
+}
+/*
+.BorderTop{
+	border-top: 0px;
+}
+.BorderRight{
+	border-right: 0px;
+}
+.BorderBottom{
+	border-bottom: 0px;
+}
+.BorderLeft{
+	border-left: 0px;
+}
+*/
+@keyframes animacao-box{
+	from {
+		height: 0px;
+		}
+	to {
+		height: 100px;
+	}
+}
+#EscolherXO1{	
+	border-bottom-left-radius: 10px;
+}
+#EscolherXO2{	
+	border-bottom-right-radius: 10px;
+}
+.EscolherXO{
+	padding: 20px;
+	display: none;
+	font-size: 100px;
+	background: #66CDAA;
+	border-top-right-radius: 30px;
+	border-top-left-radius: 30px;}
+
+@media only screen and (max-width: 400px){
+	.Colunas{
+		height: 60px;
+		font-size: 34px;
+		padding-top: 5px;
+	}
+	@keyframes animacao-box{
+	from {
+		height: 60px;
+		}
+	to {
+		height: 60px;
+	}
+}
+}

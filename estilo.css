@@ -4,7 +4,7 @@
 	border: 0;
 }
 div{
-	border: 1px dashed red;
+	border: 0px dashed red;
 	margin: 0;
 	padding: 0;
 }
@@ -15,19 +15,39 @@ body{
 	font-size: 16px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	background-color: #FAFAFA;
-	padding-top: 70px;
+	
 }
 #rodape{
 	height: 100%; 
 	margin-top: 20px;
-	background: #0B2161;
+	background: #708090;
 	color: white;
+	padding: 10px;
 }
 #iframe{
-        position: fixed;
-        top: 10px; 
-        left: 10px; 
-    }
+    position: fixed;
+    top: 10px; 
+    left: 10px; 
+ }
+ .navbar-default{
+ 	background: #4682B4;
+ }
+ .navbar-btn{
+ 	background: none;
+ 	border-bottom: 1px solid #90EE90;
+ 	box-shadow: 0px 1px 2px white;
+ 	color: white;
+ 	text-align: left;
+ }
+.navbar-btn:hover{
+ 	border-bottom: 1px solid #FFD700;
+ 	color: #FFA500;
+ }
+ .navbar-active{
+ 	background: none;
+ 	border-bottom: 1px solid red;
+ 	color: white;
+ }
 .menu-links-posicao{	
 	/*border: 1px solid green;*/
 	margin-left: 5px;
@@ -40,9 +60,6 @@ body{
 	border: 1px dashed white;
 	padding-top: 10px; 
 	padding-bottom: 10px;
-}
-.barra-de-progresso-skills{
-	margin: 10px 0px 0px 0px;
 }
 .body-certificado{
 	width: 100%; 
@@ -74,11 +91,44 @@ body{
 .certificado-cabecalho{
 	padding-left: 0px;
 }
-
+.sombra-hover:hover{
+	box-shadow: 1px 1px 30px #5882FA;
+}
+.botoes-rede-social{
+	border-radius: 50px;
+}
 .conteudo-profissional{
 	padding-left: 20px;
 	position: absolute;
 	background-color: #FAFAFA;
+}
+.texto-branco{
+	color: white;
+}
+.texto-branco:hover{
+	color: #FFA500;
+}
+.foto-profissional{
+	box-shadow: 1px 1px 5px #C0C0C0;
+	border-radius: 10px;
+}
+.progress{
+	box-shadow: 1px 1px 5px #4169E1;
+	margin: 10px 0px 0px 0px;
+}
+.progress-bar{
+	box-shadow: 1px 1px 10px #7B68EE;
+	border-radius: 0px 3px 3px 0px;
+	width: 100%;
+	animation: animacao-box 4s 0s;
+}
+@keyframes animacao-box {
+	from{
+		width: 0px;
+	}
+	to{
+		width: 100%;
+	}
 }
 /* -----------------------------------------
 /* Esta Parte de Codigo se tornou desnecessário
@@ -142,6 +192,9 @@ body{
 	.botoes-rede-social{	
 	padding: 0px 5px 0px 0px;
 	}
+	.copyright{
+		text-align: left;
+	}
 }
 @media only screen and (min-width: 992px){
 	.altura225px{
@@ -192,5 +245,7 @@ body{
 	.linha-formacao{
 		width: 100%
 	}
-	
+	.copyright{
+		text-align: center;
+	}
 }
