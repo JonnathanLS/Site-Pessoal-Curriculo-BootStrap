@@ -22,87 +22,54 @@
 
 			<!-- INICIO do Cabecalho -->
 			<nav class="navbar navbar-default">
-				<div class="container">
-
 					<div class="navbar-header">
 						<!-- Cabeçalho quando o dispaly de resolução for menor do que um Desktop -->
 						<button style="background: #F8F8FF;" type="button"  class="navbar-toggle collapsed " data-toggle="collapse" data-target="#barra-navegacao">
-							<div >
-								<div >
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</div>
-							</div>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
 
 						</button>
-						<a style="float: left; margin-left: 5px" href="#" class="navbar-toggle collapsed texto-branco" >
+						<a style="float: left; margin-left: 5px" href="#" class="navbar-toggle collapsed" >
 							<span class="glyphicon glyphicon-save"></span>
 							<strong>CV Download</strong>
 						</a>
 					</div>
 					<!-- Cabeçalho quando o dispaly de resolução for maior que um Desktop -->
 					<div class="navbar-brand collapse navbar-collapse">
-						<a href="#" class="texto-branco">
+						<a href="#">
 							<span class="glyphicon glyphicon-save"></span>
-							<strong>Curriculo PDF Download</strong>
+							Curriculo PDF Download
 						</a>
 					</div>
-
-					<div class="collapse navbar-collapse" id="barra-navegacao">
-						<ul class="nav navbar-nav navbar-right menu-links-botoes">
-							<li class="menu-links-posicao">
-								<a href="jogoDaVelha/index.html">
-									<button type="button" class="btn navbar-btn btn-block">
-										<strong>Jogo da Velha</strong>
-									</button> 
-								</a>
+					<div class="collapse navbar-collapse navbar-right" id="barra-navegacao">
+						<ul class="nav navbar-nav">
+							<li><a href="#">Home</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projetos Desenvolvidos <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="projetos/JogoDaVelha/index.html">Jogo da Velha</a></li>
+								</ul>
 							</li>
-							<li class="menu-links-posicao">
-								<a href="#">
-									<button type="button" class="btn navbar-btn btn-block">
-										<strong>Stack Overflow</strong>
-									</button> 
-								</a>
-							</li>
-							<li class="menu-links-posicao">
-								<a href="#">
-									<button type="button" class="btn navbar-btn btn-block">
-										<strong>URI Judge</strong>
-									</button> 
-								</a>
-							</li>
-							<li class="menu-links-posicao">
-								<a href="https://github.com/JonnathanLS">
-									<button type="button" class="btn navbar-btn btn-block">
-										<strong>GitHub</strong>
-									</button> 
-								</a>
-							</li>
-							<li class="menu-links-posicao">
-								<a href="#">
-									<button type="button" class="btn navbar-btn btn-block">
-										<strong>Linkedin</strong>
-									</button> 
-								</a>
-							</li>
+							<li><a href="#">Stack Overflow</a></li>
+							<li><a href="#">URI Judge</a></li>
+							
 						</ul>
 					</div>
-				</div>
 			</nav>
 			<!-- FIM do Cabecalho -->
 
 			<!-- INICIO do Conteudo Principal -->
 			<div  class="container">
 				<div class="row">
-					<div class="col-xs-12 col-sm-8 mobile-cabecalho">
+					<div class="col-xs-12 col-sm-8 titulo-cabecalho">
 						<span class="glyphicon glyphicon-user"></span>
 						<strong> - Informações</strong>
 
 					</div>
 					
-					<div class="col-sm-4 hidden-xs">
+					<div class="col-sm-4 hidden-xs  titulo-cabecalho">
 						<span class="glyphicon glyphicon-user"></span>
 						<strong> - Video Curriculo</strong>
 					</div>
@@ -118,7 +85,7 @@
 						<div style="width: 100%;" class="row mobile-conteudo">
 							<!-- Foto -->
 							<div style="padding: 0px" class="col-xs-4 photo-mobile-hide photo-mobile-show ">
-								<img style="height: 100%; width: 100%;" src="img/foto3x4.jpg" class="img-thumbnail img-responsive foto-profissional">
+								<img style="height: 100%; width: 100%;" src="img/foto3x4.jpg" alt="Foto3x4" class="img-thumbnail img-responsive foto-profissional">
 							</div>
 							<!-- Informações -->
 							<div style="float: left; padding-left: 30px;" class="col-xs" >
@@ -151,23 +118,23 @@
 
 					<!-- Foto -->
 					<div style="padding: 0px; height: 100%" class="col-sm-3 hidden-xs">
-						<img style="height: 100%; width: 100%" src="img/foto3x4.jpg" class="img-thumbnail img-responsive foto-profissional">
+						<img style="height: 100%; width: 100%" src="img/foto3x4.jpg" alt="Foto3x4" class="img-thumbnail img-responsive foto-profissional">
 					</div>
 					<!-- Informações -->
 					<div style="height: 100%; padding: 4px 0px 0px 20px;" class="col-sm-5 hidden-xs ">
 						<!-- Botoes Redes Sociais -->
 						<div style="position: absolute; margin-left: 100px; padding-right: 30px;">
 							<a href="#">
-								<img class="col-xs-3 img-responsive botoes-rede-social sombra-hover" src="img/social-linkedin.png">
+								<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-linkedin.png" alt="Botão Linkedin">
 							</a>
 							<a href="#">
-								<img class="col-xs-3 img-responsive botoes-rede-social sombra-hover" src="img/social-github.png">
+								<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-github.png" alt="Botão GitHub">
 							</a>
 							<a href="#">
-								<img class="col-xs-3 img-responsive botoes-rede-social sombra-hover" src="img/social-googleplus.png">	
+								<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-googleplus.png" alt="Botão Google +">	
 							</a>
 							<a href="#">
-								<img class="col-xs-3 img-responsive botoes-rede-social sombra-hover" src="img/social-facebook.png">
+								<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-facebook.png" alt="Botão Facebook">
 							</a>
 						</div>
 						
@@ -202,25 +169,23 @@
 						</span>           
 					</div>
 
-					<div class="col-xs-12 mobile-cabecalho visible-xs">
+					<div class="col-xs-12 visible-xs">
 						<span class="glyphicon glyphicon-user"></span>
 						<strong> - Video Curriculo</strong>
 					</div>
 					<!-- Video-Curriculo -->
 					<div style="height: 100%; padding: 0px;" class="col-xs-12 col-sm-4 img-thumbnail">
-						<a href="#janela-video" data-toggle="modal">
-							<video  style="background-color: black;" width="100%" height="100%" controls>
-								<source src="videos/teste.mp4" type="video/mp4">
-								</video>
-							</a>
+						<video class="video" controls>
+							<source src="videos/teste.mp4" type="video/mp4">
+							</video>
 						</div>
 					</div>
-
+					
 					<!-- Linha-2 Resumo e Skils -->
 					<div class="row">
 						<!-- Bloco 3 - Resumo -->
 						<div class="col-sm-8">
-							<div class="col-xs-12 mobile-cabecalho desktop-cabecalho">
+							<div class="col-xs-12 titulo-cabecalho">
 								<span class="glyphicon glyphicon-user"></span>
 								<strong> - Resumo <span class="hidden-xs">das</span> Qualificações</strong>
 							</div>
@@ -232,11 +197,11 @@
 								</p>
 							</div>
 						</div>
-						<div class="col-sm-1"></div>
+
 						<!-- 4º Bloco - Skills -->
 						<div style="padding: 0px" class="col-sm-4">
-							
-							<div class="col-xs-12 mobile-cabecalho desktop-cabecalho">
+
+							<div class="col-xs-12 titulo-cabecalho">
 								<span class="glyphicon glyphicon-user"></span>
 								<strong> - Skills</strong>
 							</div>
@@ -298,26 +263,25 @@
 									</div>
 								</div>
 							</div> 
-						
+
 						</div>
 					</div>
+
 					<!-- Linha-3 Certificações e Formação Academica -->
 					<div class="row">
-
-
 						<!-- Bloco 6 - Certificações -->
-						<div style="padding: 0px;" class="col-sm-4">
-							<div style="margin-bottom: 10px" class="col-xs-12 mobile-cabecalho desktop-cabecalho">
+						<div class="col-sm-4">
+							<div style="margin-bottom: 10px" class="col-xs-12 titulo-cabecalho">
 								<span class="glyphicon glyphicon-user"></span>
 								<strong> - Certificações</strong>
 							</div>
 							<!-- Links para os Certificados -->
-							<div style="padding: 0px" class="col-xs-12">
-								<div class="panel-group" id="accordion" aria-multiselectable="true">
+							<div class="col-xs-12">
+								<div class="panel-group" id="accordion">
 									<div class="panel panel-default">
 										<div class="panel-heading" id="certificado-1">
 											<a data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
-												<h5 class="panel-title certificado-cabecalho">
+												<h5 class="panel-title">
 													<span class="glyphicon glyphicon-triangle-right"></span>
 													<span class="hidden-xs hidden-sm">Prog. Orientada a Objetos em C#</span>
 													<span class="hidden-lg hidden-md">Prog. Orientada Obj. em C#</span>           
@@ -339,7 +303,7 @@
 									<div class="panel panel-default">
 										<div class="panel-heading" id="certificado-2">
 											<a data-toggle="collapse" data-parent="#accordion" href="#collapse-2" aria-expanded="true" aria-controls="collapse-2">
-												<h5 class="panel-title certificado-cabecalho">
+												<h5 class="panel-title">
 													<span class="glyphicon glyphicon-triangle-right"></span>
 													Curso de Algoritmo 
 												</h5>
@@ -360,7 +324,7 @@
 									<div class="panel panel-default">
 										<div class="panel-heading" id="certificado-3">
 											<a data-toggle="collapse" data-parent="#accordion" href="#collapse-3" aria-expanded="true" aria-controls="collapse-3">
-												<h5 class="panel-title certificado-cabecalho">
+												<h5 class="panel-title">
 													<span class="glyphicon glyphicon-triangle-right"></span> 
 
 													<span class="hidden-xs hidden-sm">Correspondente Bancário FBB-300 </span>
@@ -383,7 +347,7 @@
 									<div class="panel panel-default">
 										<div class="panel-heading" id="certificado-4">
 											<a data-toggle="collapse" data-parent="#accordion" href="#collapse-4" aria-expanded="true" aria-controls="collapse-4">
-												<h5 class="panel-title certificado-cabecalho">
+												<h5 class="panel-title">
 													<span class="glyphicon glyphicon-triangle-right"></span>
 													<span class="hidden-xs hidden-sm">Correspondente Bancário CA-300 </span>
 													<span class="hidden-lg hidden-md">Corresp. Bancário CA-300 </span>
@@ -402,153 +366,131 @@
 											</div>
 										</div>
 									</div>
-									
+
 								</div>
 							</div>               
 						</div>
-
 						<!-- Bloco 5 - Formação Academica -->
 						<div class="col-sm-8 grid-academico">
-							<div style="float: left; width: 100%" class="container">
-								<div class="row">
-									<div class="col-xs-12 mobile-cabecalho desktop-cabecalho">
-										<span class="glyphicon glyphicon-user"></span>
-										<strong> - Formação Academica</strong>
-									</div>
-									<div  style="padding-top: 10px" class="col-xs-12">
-										<div style="width: 100%; float: left;" class="container">
-											<div class="row">
-												<div class="col-xs-2 photo-mobile-hide photo-mobile-show">
-													<img src="img/fatec.jpg" class="img-thumbnail img-responsive tamanho-logo-academico ">
-												</div>
-												<div style="padding-left: 13px;" class="col-xs-10 linha-formacao">
-													<a href="#">
-														<img src="img/diploma.jpg" class="img-responsive img-thumbnail img-diploma sombra-hover">
-													</a>
-													<p>
-														<strong>Análise e Desenvolvimento de Sistemas</strong><br class="hidden-xs hidden-sm"><br class="hidden-xs hidden-sm">
-														Faculdade de Tecnologia de São Paulo<br class="hidden-xs hidden-sm">
-														<span class="hidden-sm">Fatec-SP - Em andamento 3º Semestre</span>
-													</p>
-												</div>
-											</div>
-											<div class="row">
-												<span style="padding-top: 10px" class="visible-lg"></span>
-												<div class="col-xs-2 photo-mobile-hide photo-mobile-show">
-													<img src="img/fmu.jpg" class="img-thumbnail img-responsive tamanho-logo-academico">
-												</div>
-												<div style="padding-left: 13px;"  class="col-xs-10 linha-formacao">
-													<a href="#">
-														<img src="img/diploma.jpg" class="img-responsive img-thumbnail img-diploma sombra-hover">
-													</a>
-													<p>
-														<strong>Tecnólogo em Negócios Imobiliários
-														</strong><br class="hidden-xs hidden-sm">
-														<br class="hidden-xs hidden-sm"> 
-														Faculdade Metropolitanas Unidas
-														<br class="hidden-xs hidden-sm">
-														<span class="hidden-sm">FMU - São Paulo - Concluído em 2012</span>
-													</p>
-												</div>
-											</div>
-										</div>
-
-									</div>
-								</div> 
+							<div class="col-xs-12 titulo-cabecalho">
+								<span class="glyphicon glyphicon-user"></span>
+								<strong> - Formação Academica</strong>
 							</div>
-						</div>
+							<div  style="padding-top: 10px" class="col-xs-12">
+								<div class="col-xs-2 photo-mobile-hide photo-mobile-show">
+									<img src="img/fatec.jpg" alt="Logo Fatec-SP" class="img-thumbnail img-responsive tamanho-logo-academico ">
+								</div>
+								<div style="padding-left: 13px;" class="col-xs-10 linha-formacao">
+									<a href="#">
+										<img src="img/diploma.jpg" alt="Diploma" class="img-responsive img-thumbnail img-diploma sombra-hover">
+									</a>
+									<p>
+										<strong>Análise e Desenvolvimento de Sistemas</strong><br class="hidden-xs hidden-sm"><br class="hidden-xs hidden-sm">
+										Faculdade de Tecnologia de São Paulo<br class="hidden-xs hidden-sm">
+										<span class="hidden-sm">Fatec-SP - Em andamento 3º Semestre</span>
+									</p>
+								</div>
+								<div class="col-xs-2 photo-mobile-hide photo-mobile-show">
+									<img src="img/fmu.jpg" alt="Logo FMU" class="img-thumbnail img-responsive tamanho-logo-academico">
+								</div>
+								<div style="padding-left: 13px;"  class="col-xs-10 linha-formacao">
+									<a href="#">
+										<img src="img/diploma.jpg" alt="Diploma" class="img-responsive img-thumbnail img-diploma sombra-hover">
+									</a>
+									<p>
+										<strong>Tecnólogo em Negócios Imobiliários
+										</strong><br class="hidden-xs hidden-sm">
+										<br class="hidden-xs hidden-sm"> 
+										Faculdade Metropolitanas Unidas
+										<br class="hidden-xs hidden-sm">
+										<span class="hidden-sm">FMU - São Paulo - Concluído em 2012</span>
+									</p>
+								</div>
+							</div>
+						</div>						
 					</div>
+
 					<!-- Linha-4 Experiencias Profissionais -->
 					<div class="row">
 						<!-- Bloco 7 - Experiencia Profissional -->
-						<div class="col-xs-12 mobile-cabecalho desktop-cabecalho">
+						<div class="col-xs-12 titulo-cabecalho">
 							<span class="glyphicon glyphicon-user"></span>
 							<strong> - Experiência Profissional</strong>
 						</div>
 						<div style="padding-top: 15px" class="col-xs-12">
-							<div class="panel-group" id="accordion-2" aria-multiselectable="true">
+							<div class="panel-group" id="accordion-2">
 								<div class="panel panel-default">
 									<div class="panel-heading" id="experiencia-1">
 										<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseP-1" aria-expanded="true" aria-controls="collapseP-1">
-											<h5 class="panel-title experiencia-cabecalho mobile-experiencia-cabecalho">
+											<h5 class="panel-title">
 												<span class="glyphicon glyphicon-triangle-right"></span>
 												Coordenador de Operações na Tec Vendas – EZ Tec – Mar/2017 a Ago/2017         
 											</h5>
 										</a>
 									</div>
 									<div id="collapseP-1" class="panel-collapse collapse in" aria-labelledby="experiencia-1">
-										<div class="panel body">
-											<div class="body-experiencia mobile-body-experiencia">
-												Ingressei como office boy na empresa, realizando serviço de despachante de certidões, com o tempo cresci no ambiente de trabalho passando por assistente, analista e supervisor.  Durante o período como assistente, fui responsável por emitir certidões nos fóruns e órgãos de diversos municípios de São Paulo e auxiliar na parte operacional do processo. Já como analista, fiquei responsável por toda etapa do processo: abordar e entrevistar o cliente; montar e administrar documentos confidenciais; redigir, conferir e assinar contratos; preparar relatórios, comparecer em reuniões e eventos, comunicar-se com as partes da operação: vendedor, banco e comprador. Na supervisão fui designado a atuar como apoio em um projeto de suporte a outras filiais, analisando o trabalho dos analistas e ajudando-os a melhorar a maneira de administrar o processo para otimização de resultados.
-											</div>
+										<div class="panel">
+											Participei de um piloto em uma grande construtora na criação de um departamento novo para otimização no tempo de conclusão do processo que até então era de 2 a 5 mesese que após início do projeto, o tempo caiu para 1 a 2 meses. Responsável por administrar junto a equipe de analistas as etapas do processo de aquisição de imóvel por financiamento bancário, acompanhando em todas as partes envolvidas na operação.
 										</div>
 									</div>
 								</div>
 								<div class="panel panel-default">
 									<div class="panel-heading" id="experiencia-2">
 										<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseP-2" aria-expanded="true" aria-controls="collapseP-2">
-											<h5 class="panel-title experiencia-cabecalho mobile-experiencia-cabecalho">
+											<h5 class="panel-title">
 												<span class="glyphicon glyphicon-triangle-right"></span>
 												Analista de Crédito Imobiliário na Efetiva EV Assessoria – Mar/2016 a Mar/2017         
 											</h5>
 										</a>
 									</div>
 									<div id="collapseP-2" class="panel-collapse collapse" aria-labelledby="experiencia-2">
-										<div class="panel body">
-											<div class="body-experiencia mobile-body-experiencia">
-												Substitui um funcionário tendo como objetivo administrar a carteira para reter clientes no processo de aquisição de imóvel por financiamento bancário. O projeto já se perdurava por 3 meses após liberação da prefeitura para concluir a aquisição do imóvel, realizei o repasse da carteira em torno de 40 dias, retendo 90% dos clientes que já haviam contratados os serviços e convertendo em torno de 10% dos que não tinham interesse na assessoria. Também administrei projetos posteriores na gestão de clientes isolados, com conclusão em média de 10 processos por mês, bem como repasse de outros 2 projetos com necessidade da venda de assessoria, sendo a conversão de clientes na carteira em torno de 70% de um e 60% do outro.
-											</div>
+										<div class="panel">
+											Substitui um funcionário tendo como objetivo administrar a carteira para reter clientes no processo de aquisição de imóvel por financiamento bancário. O projeto já se perdurava por 3 meses após liberação da prefeitura para concluir a aquisição do imóvel, realizei o repasse da carteira em torno de 40 dias, retendo 90% dos clientes que já haviam contratados os serviços e convertendo em torno de 10% dos que não tinham interesse na assessoria. Também administrei projetos posteriores na gestão de clientes isolados, com conclusão em média de 10 processos por mês, bem como repasse de outros 2 projetos com necessidade da venda de assessoria, sendo a conversão de clientes na carteira em torno de 70% de um e 60% do outro.
 										</div>
 									</div>
 								</div>	
 								<div class="panel panel-default">
 									<div class="panel-heading" id="experiencia-3">
 										<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseP-3" aria-expanded="true" aria-controls="collapseP-3">
-											<h5 class="panel-title experiencia-cabecalho mobile-experiencia-cabecalho">
+											<h5 class="panel-title">
 												<span class="glyphicon glyphicon-triangle-right"></span>
 												Analista de Crédito Imobiliário na Startup Melhor Taxa – Jul/2015 a Fev/2016         
 											</h5>
 										</a>
 									</div>
 									<div id="collapseP-3" class="panel-collapse collapse" aria-labelledby="experiencia-3">
-										<div class="panel body">
-											<div class="body-experiencia mobile-body-experiencia">
-												Responsável no atendimento de clientes, comercialização dos serviços prestados pela empresa (departamento de financiamento), bem como gerir as etapas de todo processo na aquisição de imóvel por financiamento bancário, desde a abordagem inicial (telefone e presencial) até a conclusão do processo com a transferência da propriedade do imóvel para o comprador.
-											</div>
+										<div class="panel">
+											Responsável no atendimento de clientes, comercialização dos serviços prestados pela empresa (departamento de financiamento), bem como gerir as etapas de todo processo na aquisição de imóvel por financiamento bancário, desde a abordagem inicial (telefone e presencial) até a conclusão do processo com a transferência da propriedade do imóvel para o comprador.
 										</div>
 									</div>
 								</div>
 								<div class="panel panel-default">
 									<div class="panel-heading" id="experiencia-4">
 										<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseP-4" aria-expanded="true" aria-controls="collapseP-4">
-											<h5 class="panel-title experiencia-cabecalho mobile-experiencia-cabecalho">
+											<h5 class="panel-title">
 												<span class="glyphicon glyphicon-triangle-right"></span>
 												Sócio Proprietário na JFG Assessoria em Neg. Imobi. – Mar/2014 a Jul/2015         
 											</h5>
 										</a>
 									</div>
 									<div id="collapseP-4" class="panel-collapse collapse" aria-labelledby="experiencia-4">
-										<div class="panel body">
-											<div class="body-experiencia mobile-body-experiencia">
-												Responsável pela parte financeira, informática, compras e de infraestrutura da empresa, analisei e negociei a estrutura para montar o ambiente da organização, elaborei o cartão de visita, folder, banners e o site, desenvolvi um sistema em Visual Basic for Applications (VBA) para gestão da carteira de clientes, além da administração operacional nos processos em relação aos serviços prestados.
-											</div>
+										<div class="panel">
+											Responsável pela parte financeira, informática, compras e de infraestrutura da empresa, analisei e negociei a estrutura para montar o ambiente da organização, elaborei o cartão de visita, folder, banners e o site, desenvolvi um sistema em Visual Basic for Applications (VBA) para gestão da carteira de clientes, além da administração operacional nos processos em relação aos serviços prestados.
 										</div>
 									</div>
 								</div>
 								<div class="panel panel-default">
 									<div class="panel-heading" id="experiencia-5">
 										<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseP-5" aria-expanded="true" aria-controls="collapseP-5">
-											<h5 class="panel-title experiencia-cabecalho mobile-experiencia-cabecalho">
+											<h5 class="panel-title">
 												<span class="glyphicon glyphicon-triangle-right"></span>
 												Supervisor de Crédito Imobiliário na ISA Assessoria – Fev/2009 a Fev/2014      
 											</h5>
 										</a>
 									</div>
 									<div id="collapseP-5" class="panel-collapse collapse" aria-labelledby="experiencia-5">
-										<div class="panel body">
-											<div class="body-experiencia mobile-body-experiencia">
-												Ingressei como office boy na empresa, realizando serviço de despachante de certidões, com o tempo cresci no ambiente de trabalho passando por assistente, analista e supervisor.  Durante o período como assistente, fui responsável por emitir certidões nos fóruns e órgãos de diversos municípios de São Paulo e auxiliar na parte operacional do processo. Já como analista, fiquei responsável por toda etapa do processo: abordar e entrevistar o cliente; montar e administrar documentos confidenciais; redigir, conferir e assinar contratos; preparar relatórios, comparecer em reuniões e eventos, comunicar-se com as partes da operação: vendedor, banco e comprador. Na supervisão fui designado a atuar como apoio em um projeto de suporte a outras filiais, analisando o trabalho dos analistas e ajudando-os a melhorar a maneira de administrar o processo para otimização de resultados.
-											</div>
+										<div class="panel">
+											Ingressei como office boy na empresa, realizando serviço de despachante de certidões, com o tempo cresci no ambiente de trabalho passando por assistente, analista e supervisor.  Durante o período como assistente, fui responsável por emitir certidões nos fóruns e órgãos de diversos municípios de São Paulo e auxiliar na parte operacional do processo. Já como analista, fiquei responsável por toda etapa do processo: abordar e entrevistar o cliente; montar e administrar documentos confidenciais; redigir, conferir e assinar contratos; preparar relatórios, comparecer em reuniões e eventos, comunicar-se com as partes da operação: vendedor, banco e comprador. Na supervisão fui designado a atuar como apoio em um projeto de suporte a outras filiais, analisando o trabalho dos analistas e ajudando-os a melhorar a maneira de administrar o processo para otimização de resultados.
 										</div>
 									</div>
 								</div>								
@@ -572,16 +514,42 @@
 								</div>
 								<!-- Conteudo -->
 								<div  style="padding: 0px" class="modal-body">
-									<img style="height: 100%; width: 100%" src="img/foto3x4.jpg" class="img-thumbnail img-responsive">
+									<img style="height: 100%; width: 100%" src="img/foto3x4.jpg" alt="Foto3x4" class="img-thumbnail img-responsive">
 								</div>
 								<!-- Rodapé -->
 							</div>
 						</div>
 					</div>
-					<!-- Janela-Video-Curriculo -->
-
-					<div  onclick="document.getElementById('video-curriculo').pause()" class="modal fade" id="janela-video">
-						<div class="modal-dialog modal-lg">
+					
+					<!-- Janela-Certificado-1 -->
+					<div class="modal fade" id="janela-certificado-1">
+						<div class="modal-dialog modal-md">
+							<div class="modal-content">
+								<!-- Cabeçalho -->
+								<div class="modal-header modal-cabecalho">
+									<div class="close">
+										<button type="button" class="btn btn-danger" data-dismiss="modal">
+											<strong>
+												Sair X
+											</strong>
+										</button>
+									</div>
+									<h4 style="font-size: 22px; margin: 0px; padding: 0px;" class="modal-title">Certificado</h4>
+								</div>
+								<!-- Conteudo -->
+								<div  style="padding: 0px" class="modal-body">
+									<img src="img/certificado-1.jpg" alt="Certificado" class="img-responsive img-modal-certificado">
+								</div>
+								<!-- Rodapé -->
+								<div style="text-align: center" class="modal-footer">
+									<a href="#">URL para Confirmar<br class="visible-xs"><span class="hidden-xs"> - </span>Validar o Certificado</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Janela-Certificado-2 -->
+					<div class="modal fade" id="janela-certificado-2">
+						<div class="modal-dialog modal-md">
 							<div class="modal-content">
 								<!-- Cabeçalho -->
 								<div class="modal-header modal-cabecalho">
@@ -592,111 +560,58 @@
 											</strong>
 										</button>
 									</div>
-									<h4 style="font-size: 22px; margin: 0px; padding: 0px;" class="modal-title hidden-xs">Video Curriculo</h4>
-									<h4 style="font-size: 22px; margin: 0px; padding: 0px;" class="modal-title visible-xs">Video CV</h4>
+									<h4 style="font-size: 22px; margin: 0px; padding: 0px;" class="modal-title">Certificado</h4>
 								</div>
 								<!-- Conteudo -->
-
-								<div  style="padding: 0px;" class="modal-body">
-									<video id="video-curriculo" width="100%" height="100%" controls>
-										<source src="videos/teste.mp4" type="video/mp4">											
-										</video>
-									</div>				
-									<!-- Rodapé -->
+								<div  style="padding: 0px" class="modal-body">
+									<img src="img/certificado-2.jpg" alt="Certificado" class="img-responsive img-modal-certificado">
 								</div>
-							</div>
-						</div>
-						<!-- Janela-Certificado-1 -->
-						<div class="modal fade" id="janela-certificado-1">
-							<div class="modal-dialog modal-md">
-								<div class="modal-content">
-									<!-- Cabeçalho -->
-									<div class="modal-header modal-cabecalho">
-										<div class="close">
-											<button type="button" class="btn btn-danger" data-dismiss="modal">
-												<strong>
-													Sair X
-												</strong>
-											</button>
-										</div>
-										<h4 style="font-size: 22px; margin: 0px; padding: 0px;" class="modal-title">Certificado</h4>
-									</div>
-									<!-- Conteudo -->
-									<div  style="padding: 0px" class="modal-body">
-										<img src="img/certificado-1.jpg" class="img-responsive img-modal-certificado">
-									</div>
-									<!-- Rodapé -->
-									<div style="text-align: center" class="modal-footer">
-										<a href="#">URL para Confirmar<br class="visible-xs"><span class="hidden-xs"> - </span>Validar o Certificado</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Janela-Certificado-2 -->
-						<div class="modal fade" id="janela-certificado-2">
-							<div class="modal-dialog modal-md">
-								<div class="modal-content">
-									<!-- Cabeçalho -->
-									<div class="modal-header modal-cabecalho">
-										<div class="close">
-											<button type="button" class=" btn btn-danger" data-dismiss="modal">
-												<strong>
-													Sair X
-												</strong>
-											</button>
-										</div>
-										<h4 style="font-size: 22px; margin: 0px; padding: 0px;" class="modal-title">Certificado</h4>
-									</div>
-									<!-- Conteudo -->
-									<div  style="padding: 0px" class="modal-body">
-										<img src="img/certificado-2.jpg" class="img-responsive img-modal-certificado">
-									</div>
-									<!-- Rodapé -->
-									<div style="text-align: center" class="modal-footer">
-										<a href="#">URL para Confirmar<br class="visible-xs"><span class="hidden-xs"> - </span>Validar o Certificado</a>
-									</div>
+								<!-- Rodapé -->
+								<div style="text-align: center" class="modal-footer">
+									<a href="#">URL para Confirmar<br class="visible-xs"><span class="hidden-xs"> - </span>Validar o Certificado</a>
 								</div>
 							</div>
 						</div>
 					</div>
-					<!-- FIM do Conteudo Principal -->
-					
-					
-					<footer id="rodape" >
-						<div class="container ">
-							<div class="row">
-								<div class="col-sm-10 copyright">
-									<strong>
-										Copyright © 2018<br class="visible-xs"> Jonnathan Lacerda Santos
-										<br class="" >
-										<span>Site - Curriculo - Profissional</span>
-									</strong>
-									
-								</div>
-								<div class="col-sm-2">
-									<a href="#">
-										<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-linkedin.png">
-									</a>
-									<a href="#">
-										<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-github.png">
-									</a>
-									<a href="#">
-										<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-googleplus.png">	
-									</a>
-									<a href="#">
-										<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-facebook.png">
-									</a>
-								</div>
+				</div>
+				<!-- FIM do Conteudo Principal -->
+
+
+				<footer id="rodape" >
+					<div class="container ">
+						<div class="row">
+							<div class="col-sm-10 copyright">
+								<strong>
+									Copyright © 2018<br class="visible-xs"> Jonnathan Lacerda Santos
+									<br class="" >
+									<span>Site - Curriculo - Profissional</span>
+								</strong>
+
 							</div>
-							
+							<div class="col-sm-2">
+								<a href="#">
+									<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-linkedin.png" alt="Botão Linkedin">
+								</a>
+								<a href="#">
+									<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-github.png" alt="Botão GitHub">
+								</a>
+								<a href="#">
+									<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-googleplus.png" alt="Botão Google +">	
+								</a>
+								<a href="#">
+									<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-facebook.png" alt="Botão Facebook">
+								</a>
+							</div>
 						</div>
-					</footer>
-					<!-- FIM do Rodape -->
 
-					<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+					</div>
+				</footer>
+				<!-- FIM do Rodape -->
 
-					<!-- Include all compiled plugins (below), or include individual files as needed -->
-					<script src="bootstrap/js/bootstrap.min.js"></script>
-				</body>
-				</html>
+				<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+				<!-- Include all compiled plugins (below), or include individual files as needed -->
+				<script src="bootstrap/js/bootstrap.min.js"></script>
+			</body>
+			</html>

@@ -1,16 +1,14 @@
 *{
-	margin: 0;
-	padding: 0;
-	border: 0;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
 }
 div{
-	border: 0px dashed red;
-	margin: 0;
-	padding: 0;
-}
-#barra-navegacao a {
+	border: 0px solid red;
+	margin: 0px;
 	padding: 0px;
 }
+
 body{
 	font-size: 16px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -29,57 +27,39 @@ body{
     top: 10px; 
     left: 10px; 
  }
- .navbar-default{
- 	background: #4682B4;
+ #barra-navegacao{
+ 	padding-right: 20px;
  }
- .navbar-btn{
- 	background: none;
- 	border-bottom: 1px solid #90EE90;
- 	box-shadow: 0px 1px 2px white;
- 	color: white;
- 	text-align: left;
+ hr{
+ 	margin-left: 0px;
+
  }
-.navbar-btn:hover{
- 	border-bottom: 1px solid #FFD700;
- 	color: #FFA500;
+ .row{
+ 	margin-top: 15px;
  }
- .navbar-active{
- 	background: none;
- 	border-bottom: 1px solid red;
- 	color: white;
- }
-.menu-links-posicao{	
-	/*border: 1px solid green;*/
-	margin-left: 5px;
-	margin-right: 5px;
+.dropdown-menu{
+ 	width: 100%;
 }
-.menu-links-botoes{	
-	width: all;
+.titulo-cabecalho{
+	border-bottom: 1px solid #C0C0C0;
+	text-shadow: 1px 1px 20px #B0C4DE;
+	padding: 0px 0px 5px 0px;
 }
 .borda-espaco{
 	border: 1px dashed white;
 	padding-top: 10px; 
 	padding-bottom: 10px;
 }
-.body-certificado{
-	width: 100%; 
-	margin: 0px; 
-	padding: 0px 4px 0px 4px;
-}
-.body-experiencia{
-	width: 100%; 
-	margin: 0px; 
-	padding: 10px;
-	text-align: justify;
-}
+
 .tamanho-logo-academico{
-	height: 95%; 
-	width: 95%;
+	margin-top: 5px;
+	height: 87%; 
+	width: 87%;
 }
 .img-diploma{
 	float: right; 
-	height: 27%; 
-	width: 27%;
+	height: 26%; 
+	width: 26%;
 }
 .img-modal-certificado{
 	height: 100%; 
@@ -88,25 +68,34 @@ body{
 .modal-cabecalho{
 	padding: 10px;
 }
-.certificado-cabecalho{
-	padding-left: 0px;
+.panel{
+	width: 100%; 
+	margin: 0px; 
+	padding: 5px;
+	text-align: justify;
+}
+.panel-title{
+	padding: 2px;
+	background: #F0F8FF;
+	border-radius: 3px;
 }
 .sombra-hover:hover{
 	box-shadow: 1px 1px 30px #5882FA;
-}
-.botoes-rede-social{
-	border-radius: 50px;
 }
 .conteudo-profissional{
 	padding-left: 20px;
 	position: absolute;
 	background-color: #FAFAFA;
 }
-.texto-branco{
-	color: white;
+.navbar a{
+	font-weight: bold;
 }
-.texto-branco:hover{
+.navbar a:hover{
 	color: #FFA500;
+}
+.video{
+	height: 100%;
+	width: 100%;
 }
 .foto-profissional{
 	box-shadow: 1px 1px 5px #C0C0C0;
@@ -115,11 +104,13 @@ body{
 .progress{
 	box-shadow: 1px 1px 5px #4169E1;
 	margin: 10px 0px 0px 0px;
+	height: 22px;
 }
 .progress-bar{
 	box-shadow: 1px 1px 10px #7B68EE;
 	border-radius: 0px 3px 3px 0px;
 	width: 100%;
+	height: 2em;
 	animation: animacao-box 4s 0s;
 }
 @keyframes animacao-box {
@@ -177,14 +168,11 @@ body{
 	.altura183px{
 		height: 183px;
 	}
-	.desktop-cabecalho{
-		padding: 20px 25px 0px 0px
-	}
 	.desktop-conteudo{
 		padding: 10px 25px 0px 0px;
 	}
 	.grid-academico{
-		padding: 0px 0px 0px 25px;
+		padding: 0px 0px 0px 15px;
 	}
 	.displayNONE{
 		display: none;
@@ -229,8 +217,7 @@ body{
 	}
 }
 @media only screen and (max-width: 768px){
-	.mobile-cabecalho{
-		padding-top: 20px;
+	.titulo-cabecalho{
 		padding-left: 15px;
 	}
 	.mobile-conteudo{
@@ -239,7 +226,7 @@ body{
 	.mobile-body-certificado{
 		padding-left: 13px;
 	}
-	.mobile-experiencia-cabecalho{
+	.panel-title{
 		padding-left: 10px;
 	}
 	.linha-formacao{
