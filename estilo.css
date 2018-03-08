@@ -4,7 +4,7 @@
 	border: 0px;
 }
 div{
-	border: 0px solid red;
+	border: 0px dashed red;
 	margin: 0px;
 	padding: 0px;
 }
@@ -26,16 +26,21 @@ body{
     position: fixed;
     top: 10px; 
     left: 10px; 
- }
- #barra-navegacao{
+}
+#barra-navegacao{
  	padding-right: 20px;
- }
- hr{
+}
+#conteudo{
+	height: auto;
+	text-align: center;
+	padding: 30px;
+}
+hr{
  	margin-left: 0px;
 
- }
- .row{
- 	margin-top: 15px;
+}
+.row{
+	margin-bottom: 20px;
  }
 .dropdown-menu{
  	width: 100%;
@@ -44,13 +49,8 @@ body{
 	border-bottom: 1px solid #C0C0C0;
 	text-shadow: 1px 1px 20px #B0C4DE;
 	padding: 0px 0px 5px 0px;
+	margin-bottom: 15px;
 }
-.borda-espaco{
-	border: 1px dashed white;
-	padding-top: 10px; 
-	padding-bottom: 10px;
-}
-
 .tamanho-logo-academico{
 	margin-top: 5px;
 	height: 87%; 
@@ -68,6 +68,9 @@ body{
 .modal-cabecalho{
 	padding: 10px;
 }
+.titulo-cabecalho span{
+	font-size: 20px;
+}
 .panel{
 	width: 100%; 
 	margin: 0px; 
@@ -82,6 +85,11 @@ body{
 .sombra-hover:hover{
 	box-shadow: 1px 1px 30px #5882FA;
 }
+.botao-rede-social{
+	margin-left: 8px;
+	width: 77%;
+	padding: 4px;
+}
 .conteudo-profissional{
 	padding-left: 20px;
 	position: absolute;
@@ -93,17 +101,19 @@ body{
 .navbar a:hover{
 	color: #FFA500;
 }
-.video{
-	height: 100%;
-	width: 100%;
-}
-.foto-profissional{
+.foto{
 	box-shadow: 1px 1px 5px #C0C0C0;
 	border-radius: 10px;
+	width: 90%;
+	margin-left: 15px;
 }
+.tamanho-video{
+	width: 100%;
+}
+
 .progress{
 	box-shadow: 1px 1px 5px #4169E1;
-	margin: 10px 0px 0px 0px;
+	margin: 0px 0px 10px 0px;
 	height: 22px;
 }
 .progress-bar{
@@ -154,54 +164,38 @@ body{
 	.photo-mobile-show{
 		display: inline !important; 
 	}
-	.botoes-rede-social{
-	padding: 10px 25px 10px 25px;
-	}
 }
-
-@media only screen and (min-width: 600px){
-	.botoes-rede-social{
-	padding: 10px 45px 10px 45px;
+@media only screen and (min-width: 520px){
+	.botao-rede-social{
+		padding: 25px;
 	}
 }
 @media only screen and (min-width: 768px){
-	.altura183px{
-		height: 183px;
-	}
-	.desktop-conteudo{
-		padding: 10px 25px 0px 0px;
-	}
 	.grid-academico{
 		padding: 0px 0px 0px 15px;
+	}
+	.espaco-lateral-left{
+		padding: 0px 30px 0px 0px;
 	}
 	.displayNONE{
 		display: none;
 	}
-	.botoes-rede-social{	
-	padding: 0px 5px 0px 0px;
-	}
 	.copyright{
 		text-align: left;
 	}
+	.botao-rede-social{
+		padding: 5px;
+	}
+	.tamanho-icon{
+		font-size: 50px;
+	}
 }
 @media only screen and (min-width: 992px){
-	.altura225px{
-		height: 235px;
-	}
-	.botoes-rede-social{
-	padding: 5px;
-
-	}
 	.displayBLOCK{
 		display: block;
 	}
-}
-@media only screen and (min-width: 1200px){
-	.altura277px{
-		height: 277px;
-	}
-	.botoes-rede-social{
-	padding: 10px 17px 8px 17px;
+	.tamanho-icon{
+		font-size: 75px;
 	}
 }
 @media only screen and (max-width: 400px){
@@ -212,11 +206,15 @@ body{
 		display: inline !important; 
 		margin-top: 7px;
 	}
-	.botoes-rede-social{
-	padding: 10px;
+	.botao-rede-social{
+		padding: 5px;
 	}
 }
 @media only screen and (max-width: 768px){
+	.pb-informacoes{
+		height: 150%;
+		color: white;
+	}
 	.titulo-cabecalho{
 		padding-left: 15px;
 	}
@@ -234,5 +232,12 @@ body{
 	}
 	.copyright{
 		text-align: center;
+	}
+	.tamanho-icon{
+		font-size: 40px;
+	}
+	.foto{
+		width: 50%;
+		margin-left: 25%;
 	}
 }

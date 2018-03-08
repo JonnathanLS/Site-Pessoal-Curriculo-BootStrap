@@ -22,174 +22,124 @@
 
 			<!-- INICIO do Cabecalho -->
 			<nav class="navbar navbar-default">
-					<div class="navbar-header">
-						<!-- Cabeçalho quando o dispaly de resolução for menor do que um Desktop -->
-						<button style="background: #F8F8FF;" type="button"  class="navbar-toggle collapsed " data-toggle="collapse" data-target="#barra-navegacao">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
+				<div class="navbar-header">
+					<!-- Cabeçalho quando o dispaly de resolução for menor do que um Desktop -->
+					<button style="background: #F8F8FF;" type="button"  class="navbar-toggle collapsed " data-toggle="collapse" data-target="#barra-navegacao">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
 
-						</button>
-						<a style="float: left; margin-left: 5px" href="#" class="navbar-toggle collapsed" >
-							<span class="glyphicon glyphicon-save"></span>
-							<strong>CV Download</strong>
-						</a>
-					</div>
-					<!-- Cabeçalho quando o dispaly de resolução for maior que um Desktop -->
-					<div class="navbar-brand collapse navbar-collapse">
-						<a href="#">
-							<span class="glyphicon glyphicon-save"></span>
-							Curriculo PDF Download
-						</a>
-					</div>
-					<div class="collapse navbar-collapse navbar-right" id="barra-navegacao">
-						<ul class="nav navbar-nav">
-							<li><a href="#">Home</a></li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projetos Desenvolvidos <span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="projetos/JogoDaVelha/index.html">Jogo da Velha</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Stack Overflow</a></li>
-							<li><a href="#">URI Judge</a></li>
-							
-						</ul>
-					</div>
+					</button>
+					<a style="float: left; margin-left: 5px" href="#" class="navbar-toggle collapsed" >
+						<span class="glyphicon glyphicon-save"></span>
+						<strong>CV Download</strong>
+					</a>
+				</div>
+				<!-- Cabeçalho quando o dispaly de resolução for maior que um Desktop -->
+				<div class="navbar-brand collapse navbar-collapse">
+					<a href="#">
+						<span class="glyphicon glyphicon-save"></span>
+						Curriculo PDF Download
+					</a>
+				</div>
+				<div class="collapse navbar-collapse navbar-right" id="barra-navegacao">
+					<ul class="nav navbar-nav">
+						<li><a href="#">Home</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projetos Desenvolvidos <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="projetos/JogoDaVelha/index.html">Jogo da Velha</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Stack Overflow</a></li>
+						<li><a href="#">URI Judge</a></li>
+
+					</ul>
+				</div>
 			</nav>
 			<!-- FIM do Cabecalho -->
 
 			<!-- INICIO do Conteudo Principal -->
 			<div  class="container">
 				<div class="row">
-					<div class="col-xs-12 col-sm-8 titulo-cabecalho">
-						<span class="glyphicon glyphicon-user"></span>
-						<strong> - Informações</strong>
+					<div class="col-sm-7 espaco-lateral-left">
+						<div class="col-xs-12 titulo-cabecalho">
+							<span class="glyphicon glyphicon-user"></span>
+							<strong> - Informações</strong>
+						</div>
+						<div class="col-xs-12">
+							<div style="text-align: center" class="col-sm-5">
+								<div class="col-xs-3 col-sm-6" onmouseover="Inserir(1)">
+									Foto <br><span class="glyphicon glyphicon-picture tamanho-icon"></span>
+								</div>
+								<div class="col-xs-3 col-sm-6" onmouseover="Inserir(2)">
+									Dados <br><span class="glyphicon glyphicon-th-list tamanho-icon"></span>
+								</div>
+								<div class="col-xs-12 hidden-xs"><br></div>
+								<div class="col-xs-3 col-sm-6" onmouseover="Inserir(3)">
+									Endereço <br><span class="glyphicon glyphicon-home tamanho-icon"></span>
+								</div>
+								<div class="col-xs-3 col-sm-6" onmouseover="Inserir(4)">
+									Contato <br><span class="glyphicon glyphicon-phone-alt tamanho-icon"></span>
+								</div>
 
-					</div>
-					
-					<div class="col-sm-4 hidden-xs  titulo-cabecalho">
-						<span class="glyphicon glyphicon-user"></span>
-						<strong> - Video Curriculo</strong>
-					</div>
-					<button type="button" class="btn btn-primary botao-mobile-hide botao-mobile-show btn-block" data-toggle="modal" data-target="#janela-foto-mobile">
-						Foto
-					</button>
-				</div>
-				<!-- Linha-1 - Foto, Info e Video -->
-				<div  style="padding-top: 10px" class="row altura183px altura225px altura277px">
-
-					<!-- Visualização MOBILE -->
-					<div class="col-xs-12 visible-xs">
-						<div style="width: 100%;" class="row mobile-conteudo">
-							<!-- Foto -->
-							<div style="padding: 0px" class="col-xs-4 photo-mobile-hide photo-mobile-show ">
-								<img style="height: 100%; width: 100%;" src="img/foto3x4.jpg" alt="Foto3x4" class="img-thumbnail img-responsive foto-profissional">
 							</div>
-							<!-- Informações -->
-							<div style="float: left; padding-left: 30px;" class="col-xs" >
-								
-
-								<!-- Fim Janela -->
-								<span class="glyphicon glyphicon-circle-arrow-right"></span>
-								26 Anos<br>
-								<span class="glyphicon glyphicon-heart-empty"></span>
-								Solteiro<br> 
-								<span class="glyphicon glyphicon-globe"></span>
-								Brasileiro<br>
-								<span class="glyphicon glyphicon-earphone"></span>
-								(11) 94184-4914<br>
-								<span class="glyphicon glyphicon-earphone"></span>
-								(11) 95241-9622<br>
-								<span class="glyphicon glyphicon-home"></span>
-								Rua Antônio Pires<br>
-								<span class="glyphicon glyphicon-home"></span>
-								Nº 240 - São Paulo<br>
-								<span class="glyphicon glyphicon-envelope"></span>
-								E-mail 1 Clique Aqui<br>
-								<span class="glyphicon glyphicon-envelope"></span>
-								E-mail 2 Clique Aqui<br>
+							<div class="col-sm-7">
+								<div class="col-sm-9 col-xs-12">
+									<div id="conteudo">
+									</div>
+								</div>
+								<div class="col-sm-3 col-xs-12">
+									<div class="col-sm-12 col-xs-3">
+										<a href="#">
+											<img class="img-responsive botao-rede-social" src="img/social-linkedin.png" alt="Botão Linkedin">
+										</a>
+									</div>
+									<div class="col-sm-12 col-xs-3">
+										<a href="#">
+											<img class="img-responsive botao-rede-social" src="img/social-github.png" alt="Botão GitHub">
+										</a>
+									</div>
+									<div class="col-sm-12 col-xs-3">
+										<a href="#">
+											<img class="img-responsive botao-rede-social" src="img/social-googleplus.png" alt="Botão Google +">	
+										</a>
+									</div>
+									<div class="col-sm-12 col-xs-3">
+										<a href="#">
+											<img class="img-responsive botao-rede-social" src="img/social-facebook.png" alt="Botão Facebook">
+										</a>
+									</div>
+									<div class="pb-informacoes">.</div>
+								</div>
 							</div>
-							
 						</div>
 					</div>
-					<!-- Visualização DESKTOP -->
-
-					<!-- Foto -->
-					<div style="padding: 0px; height: 100%" class="col-sm-3 hidden-xs">
-						<img style="height: 100%; width: 100%" src="img/foto3x4.jpg" alt="Foto3x4" class="img-thumbnail img-responsive foto-profissional">
-					</div>
-					<!-- Informações -->
-					<div style="height: 100%; padding: 4px 0px 0px 20px;" class="col-sm-5 hidden-xs ">
-						<!-- Botoes Redes Sociais -->
-						<div style="position: absolute; margin-left: 100px; padding-right: 30px;">
-							<a href="#">
-								<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-linkedin.png" alt="Botão Linkedin">
-							</a>
-							<a href="#">
-								<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-github.png" alt="Botão GitHub">
-							</a>
-							<a href="#">
-								<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-googleplus.png" alt="Botão Google +">	
-							</a>
-							<a href="#">
-								<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-facebook.png" alt="Botão Facebook">
-							</a>
+					<div class="col-sm-5">
+						<div class="col-xs-12 titulo-cabecalho">
+							<span class="glyphicon glyphicon-facetime-video"></span>
+							<strong> - Video Curriculo</strong>
 						</div>
 						
-						<!-- Informações -->
-						<span class="glyphicon glyphicon-circle-arrow-right"></span> 26 Anos<br>
-						<span class="glyphicon glyphicon-heart-empty"></span> Solteiro<br>
-						<span class="glyphicon glyphicon-globe"></span> Brasileiro<br>
-						<br class="visible-lg">
-						<br class="displayNONE displayBLOCK">
-						<span class="glyphicon glyphicon-home"></span> Rua Antônio Pires, nº 240<br>
-						<span class="glyphicon glyphicon-home"></span> CEP: 02730-000 - São Paulo<br>
-						<br class="visible-lg visible-md">
-						<span class="glyphicon glyphicon-earphone hidden-sm"> (11) 94184-4914 (11) 95241-9622</span>
-						<br class="displayNONE displayBLOCK">
-
-						<br class="visible-lg">
-						<span class="visible-sm">
-							<span class="glyphicon glyphicon-envelope"></span>
-							94184-4914 Ou 95241-9622 <br>
-						</span>
-						<span class="hidden-sm">
-							<span class="glyphicon glyphicon-envelope"></span>
-							jonnathan.santos@fatec.sp.gov.br<br>
-						</span>
-						<span class="hidden-sm">
-							<span class="glyphicon glyphicon-envelope"></span>
-							jonnathan.lacerda.santos@gmail.com<br>
-						</span>
-						<span class="visible-sm">
-							<span class="glyphicon glyphicon-envelope"></span>
-							E-mail Clique Aqui<br>
-						</span>           
-					</div>
-
-					<div class="col-xs-12 visible-xs">
-						<span class="glyphicon glyphicon-user"></span>
-						<strong> - Video Curriculo</strong>
-					</div>
-					<!-- Video-Curriculo -->
-					<div style="height: 100%; padding: 0px;" class="col-xs-12 col-sm-4 img-thumbnail">
-						<video class="video" controls>
-							<source src="videos/teste.mp4" type="video/mp4">
-							</video>
+						<div class="col-xs-12 col-sm-4 img-thumbnail tamanho-video">
+							<video style="height: 100%; width: 100%;" controls>
+								<source src="videos/teste.mp4" type="video/mp4">
+									Seu browser não suporta HTML5 video.
+								</video>
+							</div>
 						</div>
 					</div>
-					
+
 					<!-- Linha-2 Resumo e Skils -->
 					<div class="row">
 						<!-- Bloco 3 - Resumo -->
-						<div class="col-sm-8">
+						<div class="col-sm-7 espaco-lateral-left">
 							<div class="col-xs-12 titulo-cabecalho">
-								<span class="glyphicon glyphicon-user"></span>
+								<span class="glyphicon glyphicon-info-sign"></span>
 								<strong> - Resumo <span class="hidden-xs">das</span> Qualificações</strong>
 							</div>
-							<div class="col-xs-12 desktop-conteudo">
+							<div class="col-xs-12">
 								<p class="mobile-conteudo" style="text-align: justify;">
 									Cursando graduação em <strong>análise e desenvolvimento de sistemas</strong>, busco construir uma nova base de carreira para me desenvolver profissionalmente através de estágio na área de TI. O interesse surgiu com o estudo de <strong>HTML e CSS</strong> e se intensificou com a necessidade de programar um sistema administrativo para a empresa em que tive participação societária, cujo projeto foi elaborado com <strong>Excel, Access e linguagem de programação em Visual Basic Application.</strong>
 									<br><br>
@@ -199,63 +149,62 @@
 						</div>
 
 						<!-- 4º Bloco - Skills -->
-						<div style="padding: 0px" class="col-sm-4">
-
+						<div class="col-sm-5">
 							<div class="col-xs-12 titulo-cabecalho">
-								<span class="glyphicon glyphicon-user"></span>
+								<span class="glyphicon glyphicon-align-left"></span>
 								<strong> - Skills</strong>
 							</div>
 							<div style="padding-top: 3px" class="col-xs-12 mobile-conteudo">
-								<div class="progress barra-de-progresso-skills">
+								<div class="progress">
 									<div style="width: 20%">
 										<div class="progress-bar progress-bar-striped">
 											Ingles
 										</div>
 									</div>
 								</div>
-								<div class="progress barra-de-progresso-skills">
+								<div class="progress">
 									<div style="width: 60%">
 										<div class="progress-bar progress-bar-striped">
 											HTML e CSS
 										</div>
 									</div>
 								</div>
-								<div class="progress barra-de-progresso-skills">
+								<div class="progress">
 									<div style="width: 40%">
 										<div class="progress-bar progress-bar-striped">
 											JavaScript
 										</div>
 									</div>
 								</div>
-								<div class="progress barra-de-progresso-skills">
+								<div class="progress">
 									<div style="width: 30%">
 										<div class="progress-bar progress-bar-striped">
 											Python
 										</div>
 									</div>
 								</div>
-								<div class="progress barra-de-progresso-skills">
+								<div class="progress">
 									<div style="width: 60%">
 										<div class="progress-bar progress-bar-striped">
 											POO em C#
 										</div>
 									</div>
 								</div>
-								<div class="progress barra-de-progresso-skills">
+								<div class="progress">
 									<div style="width: 50%">
 										<div class="progress-bar progress-bar-striped">
 											Visual Basic for Application (VBA)
 										</div>
 									</div>
 								</div>
-								<div class="progress barra-de-progresso-skills">
+								<div class="progress">
 									<div style="width: 70%">
 										<div class="progress-bar progress-bar-striped">
 											Pacote Microsoft Office
 										</div>
 									</div>
 								</div>
-								<div class="progress barra-de-progresso-skills">
+								<div class="progress">
 									<div style="width: 80%">
 										<div class="progress-bar progress-bar-striped">
 											Lógica de Programação
@@ -270,9 +219,9 @@
 					<!-- Linha-3 Certificações e Formação Academica -->
 					<div class="row">
 						<!-- Bloco 6 - Certificações -->
-						<div class="col-sm-4">
-							<div style="margin-bottom: 10px" class="col-xs-12 titulo-cabecalho">
-								<span class="glyphicon glyphicon-user"></span>
+						<div class="col-sm-5 espaco-lateral-left">
+							<div class="col-xs-12 titulo-cabecalho">
+								<span class="glyphicon glyphicon-check"></span>
 								<strong> - Certificações</strong>
 							</div>
 							<!-- Links para os Certificados -->
@@ -371,12 +320,12 @@
 							</div>               
 						</div>
 						<!-- Bloco 5 - Formação Academica -->
-						<div class="col-sm-8 grid-academico">
+						<div class="col-sm-7">
 							<div class="col-xs-12 titulo-cabecalho">
-								<span class="glyphicon glyphicon-user"></span>
+								<span class="glyphicon glyphicon-education"></span>
 								<strong> - Formação Academica</strong>
 							</div>
-							<div  style="padding-top: 10px" class="col-xs-12">
+							<div class="col-xs-12">
 								<div class="col-xs-2 photo-mobile-hide photo-mobile-show">
 									<img src="img/fatec.jpg" alt="Logo Fatec-SP" class="img-thumbnail img-responsive tamanho-logo-academico ">
 								</div>
@@ -414,10 +363,10 @@
 					<div class="row">
 						<!-- Bloco 7 - Experiencia Profissional -->
 						<div class="col-xs-12 titulo-cabecalho">
-							<span class="glyphicon glyphicon-user"></span>
+							<span class="glyphicon glyphicon-lock"></span>
 							<strong> - Experiência Profissional</strong>
 						</div>
-						<div style="padding-top: 15px" class="col-xs-12">
+						<div class="col-xs-12">
 							<div class="panel-group" id="accordion-2">
 								<div class="panel panel-default">
 									<div class="panel-heading" id="experiencia-1">
@@ -520,7 +469,7 @@
 							</div>
 						</div>
 					</div>
-					
+
 					<!-- Janela-Certificado-1 -->
 					<div class="modal fade" id="janela-certificado-1">
 						<div class="modal-dialog modal-md">
@@ -590,16 +539,16 @@
 							</div>
 							<div class="col-sm-2">
 								<a href="#">
-									<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-linkedin.png" alt="Botão Linkedin">
+									<img class="col-xs-3 img-responsive" src="img/social-linkedin.png" alt="Botão Linkedin">
 								</a>
 								<a href="#">
-									<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-github.png" alt="Botão GitHub">
+									<img class="col-xs-3 img-responsive " src="img/social-github.png" alt="Botão GitHub">
 								</a>
 								<a href="#">
-									<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-googleplus.png" alt="Botão Google +">	
+									<img class="col-xs-3 img-responsive" src="img/social-googleplus.png" alt="Botão Google +">	
 								</a>
 								<a href="#">
-									<img class="col-xs-3 img-responsive botoes-rede-social" src="img/social-facebook.png" alt="Botão Facebook">
+									<img class="col-xs-3 img-responsive" src="img/social-facebook.png" alt="Botão Facebook">
 								</a>
 							</div>
 						</div>
@@ -610,6 +559,31 @@
 
 				<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+				<script type="text/javascript">
+					function InnerHTML(conteudo) {
+						document.getElementById('conteudo').innerHTML = conteudo
+					}
+					function Inserir(id){
+						switch(id){
+							case 1:
+							InnerHTML("");
+							var elemento = document.createElement("img");
+							elemento.src = 'img/foto3x4.jpg';
+							elemento.className = 'img-circle img-responsive foto';
+							document.getElementById('conteudo').appendChild(elemento);
+							break;
+							case 2:
+							InnerHTML("26 Anos<br><br>Solteiro<br><br>Brasileiro");
+							break;
+							case 3:
+							InnerHTML("Rua Antônio Pires<br> Numero 240<br><br>CEP: 02730-000 <br><br>São Paulo - SP");
+							break;
+							case 4:
+							InnerHTML("jonnathan.santos<br class='hidden-xs'>@fatec.sp.gov.br<br><br>jonnathan.lacerda<br class='hidden-xs'>.santos@gmail.com");
+							break;
+						}
+					}
+				</script>
 
 				<!-- Include all compiled plugins (below), or include individual files as needed -->
 				<script src="bootstrap/js/bootstrap.min.js"></script>
