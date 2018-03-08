@@ -4,7 +4,7 @@
 	border: 0px;
 }
 div{
-	border: 0px dashed red;
+	/*border: 1px dashed red;*/
 	margin: 0px;
 	padding: 0px;
 }
@@ -17,31 +17,29 @@ body{
 }
 #rodape{
 	height: 100%; 
-	margin-top: 20px;
 	background: #708090;
 	color: white;
-	padding: 10px;
+	padding-top: 20px;
 }
 #iframe{
     position: fixed;
     top: 10px; 
     left: 10px; 
 }
-#barra-navegacao{
- 	padding-right: 20px;
-}
 #conteudo{
 	height: auto;
 	text-align: center;
 	padding: 30px;
 }
-hr{
- 	margin-left: 0px;
-
+.navbar .container{
+	padding-right: 0px;
+}
+.container .navbar-header{
+	margin-right: 0px;
 }
 .row{
 	margin-bottom: 20px;
- }
+}
 .dropdown-menu{
  	width: 100%;
 }
@@ -51,15 +49,17 @@ hr{
 	padding: 0px 0px 5px 0px;
 	margin-bottom: 15px;
 }
+.pb-informacoes{
+	height: 130%;
+	color: white;
+}
 .tamanho-logo-academico{
 	margin-top: 5px;
 	height: 87%; 
 	width: 87%;
 }
 .img-diploma{
-	float: right; 
-	height: 26%; 
-	width: 26%;
+	width: 80%;
 }
 .img-modal-certificado{
 	height: 100%; 
@@ -104,17 +104,18 @@ hr{
 .foto{
 	box-shadow: 1px 1px 5px #C0C0C0;
 	border-radius: 10px;
-	width: 90%;
-	margin-left: 15px;
+	width: 100%;
 }
 .tamanho-video{
 	width: 100%;
 }
-
 .progress{
 	box-shadow: 1px 1px 5px #4169E1;
 	margin: 0px 0px 10px 0px;
 	height: 22px;
+}
+.Mostrar400px{
+	display: none;
 }
 .progress-bar{
 	box-shadow: 1px 1px 10px #7B68EE;
@@ -157,14 +158,6 @@ hr{
 }
 ---------------------------------------- */
 
-@media only screen and (min-width: 400px){
-	.botao-mobile-hide{
-		display: none !important; 
-	}
-	.photo-mobile-show{
-		display: inline !important; 
-	}
-}
 @media only screen and (min-width: 520px){
 	.botao-rede-social{
 		padding: 25px;
@@ -181,13 +174,17 @@ hr{
 		display: none;
 	}
 	.copyright{
-		text-align: left;
+		float: right;
 	}
 	.botao-rede-social{
 		padding: 5px;
 	}
 	.tamanho-icon{
 		font-size: 50px;
+	}
+	.container .row{
+		margin-right: 2px;
+		margin-left: 2px;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -199,18 +196,26 @@ hr{
 	}
 }
 @media only screen and (max-width: 400px){
-	.photo-mobile-hide{
-		display: none !important; 
-	}
-	.botao-mobile-show{
-		display: inline !important; 
-		margin-top: 7px;
-	}
 	.botao-rede-social{
 		padding: 5px;
 	}
+	.col-xs-12{
+		text-align: center;
+	}
+	.Mostrar400px{
+		display: block;
+	}
 }
 @media only screen and (max-width: 768px){
+	#rodape{
+		text-align: center;
+	}
+	.tamanho-logo-academico{
+		width: 20%;
+	}
+	.img-diploma{
+		width: 30%;
+	}
 	.pb-informacoes{
 		height: 150%;
 		color: white;
@@ -227,17 +232,14 @@ hr{
 	.panel-title{
 		padding-left: 10px;
 	}
-	.linha-formacao{
-		width: 100%
-	}
 	.copyright{
-		text-align: center;
+		float: none;
 	}
 	.tamanho-icon{
 		font-size: 40px;
 	}
 	.foto{
-		width: 50%;
-		margin-left: 25%;
+		width: 60%;
+		margin-left: 20%;
 	}
 }
