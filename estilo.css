@@ -8,7 +8,6 @@ div{
 	margin: 0px;
 	padding: 0px;
 }
-
 body{
 	font-size: 16px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -38,16 +37,17 @@ body{
 	margin-right: 0px;
 }
 .row{
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 .dropdown-menu{
  	width: 100%;
 }
 .titulo-cabecalho{
-	border-bottom: 1px solid #C0C0C0;
+	border-bottom: 1px solid rgba(105,105,105, 0.2);
 	text-shadow: 1px 1px 20px #B0C4DE;
-	padding: 0px 0px 5px 0px;
+	padding: 0px 0px 5px 3px;
 	margin-bottom: 15px;
+	border-radius: 7px;
 }
 .pb-informacoes{
 	height: 130%;
@@ -55,11 +55,18 @@ body{
 }
 .tamanho-logo-academico{
 	margin-top: 5px;
-	height: 87%; 
-	width: 87%;
+	height: 80%; 
+	width: 80%;
 }
 .img-diploma{
 	width: 80%;
+}
+.tamanho-icon{
+	text-shadow: 1px 1px 10px #6495ED;
+}
+.tamanho-icon:hover{
+	color: #90EE90;
+	text-shadow: 1px 1px 10px gray;
 }
 .img-modal-certificado{
 	height: 100%; 
@@ -94,6 +101,9 @@ body{
 	padding-left: 20px;
 	position: absolute;
 	background-color: #FAFAFA;
+}
+.tooltip{
+	font-size: 15px;
 }
 .navbar a{
 	font-weight: bold;
@@ -186,6 +196,9 @@ body{
 		margin-right: 2px;
 		margin-left: 2px;
 	}
+	#uri .modal-header{
+		height: 120px;
+	}
 }
 @media only screen and (min-width: 992px){
 	.displayBLOCK{
@@ -205,13 +218,13 @@ body{
 	.Mostrar400px{
 		display: block;
 	}
+	.Esconder400px{
+		display: none;
+	}
 }
 @media only screen and (max-width: 768px){
 	#rodape{
 		text-align: center;
-	}
-	.tamanho-logo-academico{
-		width: 20%;
 	}
 	.img-diploma{
 		width: 30%;
