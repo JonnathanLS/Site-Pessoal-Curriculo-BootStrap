@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Curriculo - Jonnathan Lacerda Santos</title>
+	<title>Currículo - Jonnathan Lacerda Santos</title>
 
 	<!-- Bootstrap -->
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -40,7 +40,7 @@
 						<div class="navbar-brand collapse navbar-collapse">
 							<a href="CV_Jonnathan_Lacerda_Santos.pdf" data-toggle="tooltip" data-placement="right" title="Baixar Currículo .PDF">
 								<span class="glyphicon glyphicon-save"></span>
-								Curriculo PDF Download
+								Currículo PDF Download
 							</a>
 						</div>
 						<div class="collapse navbar-collapse navbar-right" id="barra-navegacao">
@@ -59,7 +59,7 @@
 								</li>
 								<li>
 									<a href="#" data-toggle="modal" data-target="#uri">
-										URI Judge
+										URI Online Judge
 									</a>
 								</li>
 
@@ -127,14 +127,14 @@
 						</div>
 						<div class="col-sm-5">
 							<div class="col-xs-12 titulo-cabecalho">
-								<span class="glyphicon glyphicon-facetime-video"></span>
-								<strong> - Video Curriculo</strong>
+								<span class="glyphicon glyphicon-film"></span>
+								<strong> - Vídeo Currículo</strong>
 							</div>
 
 							<div class="col-xs-12 col-sm-4 img-thumbnail tamanho-video">
 								<video style="height: 100%; width: 100%;" controls>
 									<source src="videos/teste.mp4" type="video/mp4">
-										Seu browser não suporta HTML5 video.
+										Seu browser não suporta HTML5 Vídeo.
 									</video>
 								</div>
 							</div>
@@ -146,7 +146,7 @@
 							<div class="col-sm-7 espaco-lateral-left">
 								<div class="col-xs-12 titulo-cabecalho">
 									<span class="glyphicon glyphicon-info-sign"></span>
-									<strong> - Resumo Qualificações</strong>
+									<strong> - Resumo e Qualificações</strong>
 								</div>
 								<div class="col-xs-12">
 									<p class="mobile-conteudo" style="text-align: justify;">
@@ -167,14 +167,14 @@
 									<div class="progress">
 										<div style="width: 20%">
 											<div class="progress-bar progress-bar-striped">
-												Ingles
+												Inglês
 											</div>
 										</div>
 									</div>
 									<div class="progress">
 										<div style="width: 60%">
 											<div class="progress-bar progress-bar-striped">
-												HTML e CSS
+												HTML5 e CSS3
 											</div>
 										</div>
 									</div>
@@ -232,7 +232,8 @@
 								<div class="col-xs-12 titulo-cabecalho">
 									<span class="glyphicon glyphicon-check"></span>
 									<strong> - Certificações</strong>
-									<a href="#" style="float: right; font-size: 16px;padding-right: 10px; color: red;">Previsões</a>
+									<br class="Mostrar400px">
+									<a href="#" data-toggle="modal" data-target="#janela-proximos-certificados" id="proximos-certificados" onclick="InserirConteudoPC(1)">Próximos Certificados</a>
 								</div>
 								<!-- Links para os Certificados -->
 								<div  style="text-align: center;" class="col-xs-12">
@@ -242,8 +243,8 @@
 												<a data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
 													<h5 class="panel-title">
 														<span class="glyphicon glyphicon-triangle-right"></span>
-														<span class="hidden-xs hidden-sm">Prog. Orientada a Objetos em C#</span>
-														<span class="hidden-lg hidden-md">Prog. Orientada Obj. em C#</span>           
+														<span class="hidden-xs hidden-sm">Programação Orientada a Objetos em C#</span>
+														<span class="hidden-lg hidden-md">Prog. Orientada a Obj. em C#</span>           
 													</h5>
 												</a>
 											</div>
@@ -271,7 +272,7 @@
 											<div id="collapse-2" class="panel-collapse collapse" aria-labelledby="certificado-2">
 												<div class="panel body">
 													<div class="body-certificado mobile-body-certificado">
-														Curso em Video
+														Curso em Vídeo
 														<a style="float: right;" href="#janela-certificado-2" data-toggle="modal" title="Visualizar">
 															<span class="glyphicon glyphicon-ok"></span>
 															Certificado
@@ -393,7 +394,7 @@
 										</div>
 										<div id="collapseP-1" class="panel-collapse collapse in" aria-labelledby="experiencia-1">
 											<div class="panel">
-												Participei de um piloto em uma grande construtora na criação de um departamento novo para otimização no tempo de conclusão do processo que até então era de 2 a 5 mesese que após início do projeto, o tempo caiu para 1 a 2 meses. Responsável por administrar junto a equipe de analistas as etapas do processo de aquisição de imóvel por financiamento bancário, acompanhando em todas as partes envolvidas na operação.
+												Participei de um piloto em uma grande construtora na criação de um departamento novo para otimização no tempo de conclusão do processo que até então era de 2 a 5 meses, e que após início do projeto, o tempo caiu para 1 a 2 meses. Responsável por administrar junto a equipe de analistas as etapas do processo de aquisição de imóvel por financiamento bancário, acompanhando em todas as partes envolvidas na operação.
 											</div>
 										</div>
 									</div>
@@ -570,9 +571,75 @@
 								</div>
 							</div>
 						</div>
+						<!-- Janela-Proximos Certificados -->
+						<div class="modal fade" id="janela-proximos-certificados">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<!-- Cabeçalho -->
+									<div class="modal-header modal-cabecalho">
+										<div class="close">
+											<button type="button" class=" btn btn-danger" data-dismiss="modal">
+												<strong>
+													Sair X
+												</strong>
+											</button>
+										</div>
+										<h4 style="font-size: 22px; margin: 0px; padding: 0px;" class="modal-title">Próximos Certificados</h4>
+									</div>
+									<!-- Conteudo -->
+									<div class="modal-body">
+										<div class="row mobile-conteudo">
+											<div class="col-sm-4">
+												<button class="btn-block menu-PC" onclick="InserirConteudoPC(1)">
+													<span class="glyphicon glyphicon-share-alt"></span>
+													Curso de Desenvolvedor Web
+												</button>
+												<button class="btn-block menu-PC" onclick="InserirConteudoPC(2)">
+													<span class="glyphicon glyphicon-share-alt"></span>
+													Python Multiplataforma
+												</button>
+												<!-- <button class="btn-block menu-PC" onclick="InserirConteudoPC(3)">
+													<span class="glyphicon glyphicon-share-alt"></span>
+													Certificado 3
+												</button>
+												<button class="btn-block menu-PC" onclick="InserirConteudoPC(4)">
+													<span class="glyphicon glyphicon-share-alt"></span>
+													Certificado 4
+												</button>
+												<button class="btn-block menu-PC" onclick="InserirConteudoPC(5)">
+													<span class="glyphicon glyphicon-share-alt"></span>
+													Certificado 5
+												</button>
+												<button class="btn-block menu-PC" onclick="InserirConteudoPC(6)">
+													<span class="glyphicon glyphicon-share-alt"></span>
+													Certificado 6
+												</button>
+												<button class="btn-block menu-PC" onclick="InserirConteudoPC(7)">
+													<span class="glyphicon glyphicon-share-alt"></span>
+													Certificado 7
+												</button>
+												<button class="btn-block menu-PC" onclick="InserirConteudoPC(8)">
+													<span class="glyphicon glyphicon-share-alt"></span>
+													Certificado 8
+												</button>
+												<button class="btn-block menu-PC" onclick="InserirConteudoPC(9)">
+													<span class="glyphicon glyphicon-share-alt"></span>
+													Certificado 9
+												</button>
+												<button class="btn-block menu-PC" onclick="InserirConteudoPC(10)">
+													<span class="glyphicon glyphicon-share-alt"></span>
+													Certificado 10
+												</button> -->			
+											</div>
+											<div class="col-sm-8" id="conteudo-PC">	
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<!-- FIM do Conteudo Principal -->
-
 
 					<footer id="rodape" >
 						<div class="container ">
@@ -598,6 +665,28 @@
 					<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 					<script>
+						function InnerHTMLPC(conteudo){
+							document.getElementById('conteudo-PC').innerHTML = conteudo;
+						}
+						function InserirConteudoPC(valor){
+							switch(valor){
+								case 1:
+									InnerHTMLPC('<img src="img/CursoDevWEB.png" class="img-responsive img-PC">Criar páginas estáticas com HTML5, CSS3 e JavaScript;Criar páginas responsivas com Bootstrap: crie sites responsivos e que se adaptem aos diversos tamanhos de telas, como por exemplo smartphones; Utilizar a biblioteca JQuery na prática: torne a experiência de navegação no  site muito mais amigável e profissional; Aprender AJAX: um conceito de requisição assíncrona que torna a usabilidade de sites e sistemas web muito mais agradáveis; Aprender PHP: uma das linguagens de programação mais utilizadas no mundo; Aprender o conceito de Orientação a Objetos; Aprender MySQL:um dos bancos de dados mais utilizados no mundo.<br><br><div class="progress"><div style="width: 67%"><div class="progress-bar"></div></div></div>67% Concluído<a href="https://www.udemy.com/curso-completo-do-desenvolvedor-web/learn/v4/overview">Fonte: Udemy - Visitar página do Curso</a>');
+									break;
+								case 2: 
+									InnerHTMLPC('<img src="img/CursoDevPYTHON.png" class="img-responsive img-PC">Ambientes Virtuais (Virtualenv e Anaconda); Controle de Versionamento de Código (Git); 	Construção de janelas gráficas (Kivy); Banco de dados relacional (SQLite e MySQL); Linguagem SQL; Framework ORM (SQLAlchemy); Manipulação de linguagens de marcação (XML/JSON/HTML); Download de arquivos e/ou vídeos; Consumo de serviços de terceiros; Integração com serviços de mensagem (envio de torpedo e WhatsApp); Integração com a Nuvem (Firebase); Sincronização de dados em tempo real entre vários dispositivos<br><br><div class="progress"><div style="width: 4%"><div class="progress-bar"></div></div></div>4% Concluído<a href="https://www.udemy.com/curso-completo-do-desenvolvedor-web/learn/v4/">Fonte: Udemy - Visitar página do Curso</a>');
+									break;
+								case 3: break;
+								case 4: break;
+								case 5: break;
+								case 6: break;
+								case 7: break;
+								case 8: break;
+								case 9: break;
+								case 10: break;
+								default: break;
+							}
+						}
 						function Mostrar(id){
 							document.getElementById(id).style.display = 'block';
 						}
@@ -617,13 +706,13 @@
 								document.getElementById('conteudo').appendChild(elemento);
 								break;
 								case 2:
-								InnerHTML("26 Anos<br>...<br>Solteiro<br>...<br>Brasileiro");
+								InnerHTML("<br><span class='glyphicon glyphicon-info-sign'></span> 26 Anos<br class='hidden-xs'> <br class='hidden-xs'><span class='glyphicon glyphicon-heart'></span> Solteiro<br class='hidden-xs'> <br class='hidden-xs'><span class='glyphicon glyphicon-globe'></span> Brasileiro");
 								break;
 								case 3:
-								InnerHTML("<br>Rua Antônio Pires, nº 240 - Vila Albertina<br>CEP: 02730-000<br>São Paulo - SP");
+								InnerHTML("<br>Rua Antônio Pires, nº 240 - Vila Albertina<br>CEP: 02730-000 <br class='hidden-xs'>São Paulo - SP");
 								break;
 								case 4:
-								InnerHTML("(11) 94184-4914<br class='hidden-xs'> Ou 95241-9622<br><br><a href='mailto:jonnathan.santos@fatec.sp.gov.br'>jonnathan.santos<br class='hidden-xs'>@fatec.sp.gov.br</a><br><a href='mailto:jonnathan.lacerda.santos@gmail.com'>jonnathan.lacerda<br class='hidden-xs'>.santos@gmail.com</a>");
+								InnerHTML("(11) 94184-4914<br class='hidden-xs'> Ou 95241-9622<br><a href='mailto:jonnathan.santos@fatec.sp.gov.br'>jonnathan.santos<br class='hidden-xs'>@fatec.sp.gov.br</a><br><a href='mailto:jonnathan.lacerda.santos@gmail.com'>jonnathan.lacerda<br class='hidden-xs'>.santos@gmail.com</a>");
 								break;
 							}
 						}
