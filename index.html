@@ -10,6 +10,7 @@
 	<!-- Bootstrap -->
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="estilo.css" rel="stylesheet">
+	<script src="js.js"></script>
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,6 +18,7 @@
 					<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 					<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 				<![endif]-->
+
 			</head>
 			<body>
 
@@ -132,10 +134,13 @@
 							</div>
 
 							<div class="col-xs-12 col-sm-4 img-thumbnail tamanho-video">
+								<img class="img-responsive" src="img/video-em-producao.png" style="height: 100%; width: 100%; position: absolute; background: red;">
+							
 								<video style="height: 100%; width: 100%;" controls>
 									<source src="videos/teste.mp4" type="video/mp4">
 										Seu browser não suporta HTML5 Vídeo.
-									</video>
+								</video>
+								
 								</div>
 							</div>
 						</div>
@@ -584,52 +589,39 @@
 												</strong>
 											</button>
 										</div>
-										<h4 style="font-size: 22px; margin: 0px; padding: 0px;" class="modal-title">Próximos Certificados</h4>
+										<h4 style="font-size: 20px; margin: 0px; padding: 0px;" class="modal-title">Próximos Certificados</h4>
 									</div>
 									<!-- Conteudo -->
 									<div class="modal-body">
 										<div class="row mobile-conteudo">
 											<div class="col-sm-4">
 												<button class="btn-block menu-PC" onclick="InserirConteudoPC(1)">
-													<span class="glyphicon glyphicon-share-alt"></span>
 													Curso de Desenvolvedor Web
 												</button>
 												<button class="btn-block menu-PC" onclick="InserirConteudoPC(2)">
-													<span class="glyphicon glyphicon-share-alt"></span>
 													Python Multiplataforma
 												</button>
-												<!-- <button class="btn-block menu-PC" onclick="InserirConteudoPC(3)">
-													<span class="glyphicon glyphicon-share-alt"></span>
-													Certificado 3
+												<button class="btn-block menu-PC" onclick="InserirConteudoPC(3)">
+													Curso de Banco de Dados
 												</button>
 												<button class="btn-block menu-PC" onclick="InserirConteudoPC(4)">
-													<span class="glyphicon glyphicon-share-alt"></span>
-													Certificado 4
+													Curso Completo de Inglês
 												</button>
 												<button class="btn-block menu-PC" onclick="InserirConteudoPC(5)">
-													<span class="glyphicon glyphicon-share-alt"></span>
-													Certificado 5
+													Desenvolvimento Android
 												</button>
 												<button class="btn-block menu-PC" onclick="InserirConteudoPC(6)">
-													<span class="glyphicon glyphicon-share-alt"></span>
-													Certificado 6
+													Desenvolvedor Multiplataforma
 												</button>
 												<button class="btn-block menu-PC" onclick="InserirConteudoPC(7)">
-													<span class="glyphicon glyphicon-share-alt"></span>
-													Certificado 7
+													Jogos com Unreal Ungine 4 
 												</button>
 												<button class="btn-block menu-PC" onclick="InserirConteudoPC(8)">
-													<span class="glyphicon glyphicon-share-alt"></span>
-													Certificado 8
+													Jogos 2D com Unity
 												</button>
 												<button class="btn-block menu-PC" onclick="InserirConteudoPC(9)">
-													<span class="glyphicon glyphicon-share-alt"></span>
-													Certificado 9
-												</button>
-												<button class="btn-block menu-PC" onclick="InserirConteudoPC(10)">
-													<span class="glyphicon glyphicon-share-alt"></span>
-													Certificado 10
-												</button> -->			
+													Jogos 2D com GODOT
+												</button>			
 											</div>
 											<div class="col-sm-8" id="conteudo-PC">	
 											</div>
@@ -645,7 +637,7 @@
 						<div class="container ">
 							<div class="row">
 								<div class="col-xs-12">
-								       
+
 									<strong>
 										<span>Site - Curriculo - Profissional</span>
 										<br class="visible-xs">
@@ -664,62 +656,10 @@
 
 					<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-					<script>
-						function InnerHTMLPC(conteudo){
-							document.getElementById('conteudo-PC').innerHTML = conteudo;
-						}
-						function InserirConteudoPC(valor){
-							switch(valor){
-								case 1:
-									InnerHTMLPC('<img src="img/CursoDevWEB.png" class="img-responsive img-PC">Criar páginas estáticas com HTML5, CSS3 e JavaScript;Criar páginas responsivas com Bootstrap: crie sites responsivos e que se adaptem aos diversos tamanhos de telas, como por exemplo smartphones; Utilizar a biblioteca JQuery na prática: torne a experiência de navegação no  site muito mais amigável e profissional; Aprender AJAX: um conceito de requisição assíncrona que torna a usabilidade de sites e sistemas web muito mais agradáveis; Aprender PHP: uma das linguagens de programação mais utilizadas no mundo; Aprender o conceito de Orientação a Objetos; Aprender MySQL:um dos bancos de dados mais utilizados no mundo.<br><br><div class="progress"><div style="width: 67%"><div class="progress-bar"></div></div></div>67% Concluído<a href="https://www.udemy.com/curso-completo-do-desenvolvedor-web/learn/v4/overview">Fonte: Udemy - Visitar página do Curso</a>');
-									break;
-								case 2: 
-									InnerHTMLPC('<img src="img/CursoDevPYTHON.png" class="img-responsive img-PC">Ambientes Virtuais (Virtualenv e Anaconda); Controle de Versionamento de Código (Git); 	Construção de janelas gráficas (Kivy); Banco de dados relacional (SQLite e MySQL); Linguagem SQL; Framework ORM (SQLAlchemy); Manipulação de linguagens de marcação (XML/JSON/HTML); Download de arquivos e/ou vídeos; Consumo de serviços de terceiros; Integração com serviços de mensagem (envio de torpedo e WhatsApp); Integração com a Nuvem (Firebase); Sincronização de dados em tempo real entre vários dispositivos<br><br><div class="progress"><div style="width: 4%"><div class="progress-bar"></div></div></div>4% Concluído<a href="https://www.udemy.com/curso-completo-do-desenvolvedor-web/learn/v4/">Fonte: Udemy - Visitar página do Curso</a>');
-									break;
-								case 3: break;
-								case 4: break;
-								case 5: break;
-								case 6: break;
-								case 7: break;
-								case 8: break;
-								case 9: break;
-								case 10: break;
-								default: break;
-							}
-						}
-						function Mostrar(id){
-							document.getElementById(id).style.display = 'block';
-						}
-						function Ocultar(id){
-							document.getElementById(id).style.display = 'none';
-						}
-						function InnerHTML(conteudo) {
-							document.getElementById('conteudo').innerHTML = conteudo
-						}
-						function Inserir(id){
-							switch(id){
-								case 1:
-								InnerHTML("");
-								var elemento = document.createElement("img");
-								elemento.src = 'img/foto3x4.jpg';
-								elemento.className = 'img-responsive img-rounded foto';
-								document.getElementById('conteudo').appendChild(elemento);
-								break;
-								case 2:
-								InnerHTML("<br><span class='glyphicon glyphicon-info-sign'></span> 26 Anos<br class='hidden-xs'> <br class='hidden-xs'><span class='glyphicon glyphicon-heart'></span> Solteiro<br class='hidden-xs'> <br class='hidden-xs'><span class='glyphicon glyphicon-globe'></span> Brasileiro");
-								break;
-								case 3:
-								InnerHTML("<br>Rua Antônio Pires, nº 240 - Vila Albertina<br>CEP: 02730-000 <br class='hidden-xs'>São Paulo - SP");
-								break;
-								case 4:
-								InnerHTML("(11) 94184-4914<br class='hidden-xs'> Ou 95241-9622<br><a href='mailto:jonnathan.santos@fatec.sp.gov.br'>jonnathan.santos<br class='hidden-xs'>@fatec.sp.gov.br</a><br><a href='mailto:jonnathan.lacerda.santos@gmail.com'>jonnathan.lacerda<br class='hidden-xs'>.santos@gmail.com</a>");
-								break;
-							}
-						}
-					</script>
+
 					<script>
 						$(document).ready(function(){
-						    $('[data-toggle="tooltip"]').tooltip(); 
+							$('[data-toggle="tooltip"]').tooltip(); 
 						});
 					</script>
 					<!-- Include all compiled plugins (below), or include individual files as needed -->
